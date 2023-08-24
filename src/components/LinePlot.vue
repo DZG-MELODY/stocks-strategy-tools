@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {  Line, lineY } from '@observablehq/plot';
+import { Line, lineY, PlotOptions, indexOf, tip, pointerX } from '@observablehq/plot';
 import { onMounted, reactive } from 'vue';
 import BasePlot from './BasePlot.vue';
 
@@ -11,31 +11,45 @@ const aapl = [
   { Date: new Date("2013-05-17"), Open: 62.721428, High: 62.869999, Low: 61.572857, Close: 61.894287, Volume: 106976100 }
 ];
 
-// const plot = ref(Plot.plot({ marks: [lineY(aapl, { x: 'Date', y: 'Close' })] }))
-// const plotEle = ref<HTMLDivElement | null>(null);
+
 interface LinePlotOptions {
-  id?: number
-  options: { marks: Array<Line> }
+  options: PlotOptions
 }
 
 const plotOptions = reactive<LinePlotOptions>({
-  id: Date.now(),
   options: {
+    style: 'overflow:visible',
+    title: 'data title',
+    subtitle: 'data sub title',
+    caption: 'data caption',
+    margin: 60,
+    y: {
+      grid: true,
+      label: 'count'
+    },
+    color: {
+      legend: true
+    },
     marks: []
   }
 });
 
+const genLineMarks = (data: Array<{ Date: Date, Open: number, High: number, Low: number, Close: number }>): Array<Line> => {
+  return [
+    lineY(data, { x: indexOf, y: 'High', stroke: 'red', strokeWidth: 2, }),
+    lineY(data, { x: indexOf, y: 'Low', stroke: 'green', strokeWidth: 2, }),
+    tip(data, pointerX({ x: indexOf, y: 'High' }))
+  ];
+};
+
 onMounted(() => {
-  plotOptions.options.marks = [lineY(aapl, { x: 'Date', y: 'Close' })];
-  // if (plotEle.value === null) return
-  // plotEle.value.append(plot.value)
+  plotOptions.options.marks = genLineMarks(aapl);
 });
 
 const onClickUpdate = () => {
   aapl.splice(0, 1);
   console.log(aapl.length);
-  plotOptions.options.marks = [lineY(aapl, { x: 'Date', y: 'Close' })];
-  plotOptions.id = Date.now();
+  plotOptions.options.marks = genLineMarks(aapl);
   // plot.value = Plot.plot({ marks: [Plot.lineY(aapl, { x: 'Date', y: 'Close' })] })
 };
 
@@ -43,11 +57,10 @@ const onClickUpdate = () => {
 </script>
 
 <template>
-  <div ref="plotEle">
-    placeholder
+  <div class="w-full h-full bg-gray-300 flex flex-col items-center justify-center">
+    <BasePlot :options="plotOptions.options" />
+    <button @click="onClickUpdate">
+      update
+    </button>
   </div>
-  <BasePlot :options="plotOptions.options" />
-  <button @click="onClickUpdate">
-    update
-  </button>
 </template>

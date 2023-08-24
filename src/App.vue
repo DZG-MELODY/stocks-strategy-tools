@@ -20,7 +20,9 @@ import LinePlot from './components/LinePlot.vue';
     Place static files into the <code>/public</code> folder
     <img style="width: 2.4em; margin-left: .4em;" src="/logo.svg" alt="Logo">
   </div> -->
-  <LinePlot />
+  <div class="w-full h-full bg-white dark:bg-black">
+    <LinePlot />
+  </div>
 </template>
 
 <style>

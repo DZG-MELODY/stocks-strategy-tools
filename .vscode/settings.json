@@ -1,10 +1,10 @@
 {
   "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "vue.codeActions.enabled": false,
   "[typescript]": {
-    "editor.formatOnSave": false
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "eslint.codeActionsOnSave.mode": "problems",
   "typescript.tsdk": "node_modules/typescript/lib",
