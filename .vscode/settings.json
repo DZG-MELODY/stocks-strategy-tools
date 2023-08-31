@@ -8,6 +8,10 @@
   },
   "eslint.codeActionsOnSave.mode": "problems",
   "typescript.tsdk": "node_modules/typescript/lib",
+  "path-autocomplete.pathMappings": {
+    "@client": "${workspace}/src",
+    "@electron": "${workspace}/electron"
+  },
   "json.schemas": [
     {
       "fileMatch": [
