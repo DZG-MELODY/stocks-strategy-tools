@@ -3,9 +3,6 @@
     "editor.defaultFormatter": "Vue.volar"
   },
   "vue.codeActions.enabled": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "eslint.codeActionsOnSave.mode": "problems",
   "typescript.tsdk": "node_modules/typescript/lib",
   "path-autocomplete.pathMappings": {

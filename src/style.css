@@ -6,7 +6,8 @@
 @layer base {
 
   html,
-  body {
+  body,
+  #app {
     @apply w-full h-full overflow-hidden;
   }
 

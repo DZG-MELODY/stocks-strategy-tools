@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
     "paths": {
       "@client": [
         "src/*"

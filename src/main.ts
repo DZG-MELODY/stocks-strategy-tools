@@ -8,7 +8,18 @@ import './node-libs/startup';
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: []
+  routes: [
+    {
+      name: 'home',
+      path: '/',
+      component: () => import('@client/modules/home/index.vue')
+    },
+    {
+      name: 'strategy',
+      path: '/strategy',
+      component: () => import('@client/modules/strategy/index.vue')
+    }
+  ]
 });
 
 createApp(App)
