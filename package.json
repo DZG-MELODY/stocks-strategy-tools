@@ -27,7 +27,7 @@
   "devDependencies": {
     "@observablehq/plot": "^0.6.10",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
+    "@typescript-eslint/parser": "^6.5.0",
     "@vitejs/plugin-vue": "^4.3.2",
     "@vue/devtools": "^6.5.0",
     "concurrently": "^8.2.0",
