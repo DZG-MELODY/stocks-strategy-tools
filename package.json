@@ -28,7 +28,7 @@
     "@observablehq/plot": "^0.6.10",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
-    "@vitejs/plugin-vue": "^4.3.2",
+    "@vitejs/plugin-vue": "^4.3.4",
     "@vue/devtools": "^6.5.0",
     "concurrently": "^8.2.0",
     "cross-env": "^7.0.3",
