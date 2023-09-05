@@ -3,6 +3,7 @@ import { HTTPResponseError } from '../utils/request';
 import { fetchLimitHistoryForDay, covertStockItem } from './data-fetch/df-share';
 import { getLimitHistoryForDay, setLimitHistoryForDay, type LimitForDay } from './data-storage/low-db';
 import { init } from './data-storage/low-db/init';
+export type * from './data-storage/low-db';
 
 
 type DataResult<T, E = string> = [true, T] | [false, E]

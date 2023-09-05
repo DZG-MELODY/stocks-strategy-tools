@@ -1,7 +1,6 @@
 import { join } from 'node:path';
 import { existsSync, mkdirSync } from 'node:fs';
 import { type Low } from 'lowdb';
-// import { JSONFile } from 'lowdb/node';
 import { type LimitForDay } from './limit-history';
 
 const DB_ROOT = join(__dirname, '..', 'low-db');

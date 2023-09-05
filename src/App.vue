@@ -1,8 +1,9 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-// import LinePlot from './components/LinePlot.vue';
+import { darkTheme } from 'naive-ui';
 </script>
 
 <template>
-  <RouterView></RouterView>
+  <NConfigProvider class="w-full h-full" :theme="darkTheme">
+    <RouterView></RouterView>
+  </NConfigProvider>
 </template>
