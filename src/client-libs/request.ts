@@ -1,21 +1,18 @@
-import fetch, { Response } from 'node-fetch';
-import { URL, URLSearchParams } from 'node:url';
 
-export class HTTPResponseError extends Error {
+class HTTPResponseError extends Error {
   constructor(response: Response) {
     super(`HTTP Error Response: ${response.status} ${response.statusText}`);
   }
 }
 
-export async function httpGet<Req, Res>(url: string, params?: Req, options?: { headers?: Record<string, string> }) {
+export async function httpGet<Req, Res>(url: string, params?: Req) {
   const urlObj = new URL(url);
   urlObj.search = new URLSearchParams(Object.fromEntries(Object.entries(params || {}))).toString();
   try {
-    const ret = await fetch(urlObj.toString(), {
+    const ret = await fetch(url.toString(), {
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
-        ...(options?.headers || {})
+        'Content-Type': 'application/json'
       }
     });
     if (ret.ok) return (await ret.json()) as Res;
@@ -27,14 +24,13 @@ export async function httpGet<Req, Res>(url: string, params?: Req, options?: { h
 
 };
 
-export async function httpPost<Req, Res>(url: string, params: Req, options?: { headers?: Record<string, string> }) {
+export async function httpPost<Req, Res>(url: string, params: Req) {
   try {
     const ret = await fetch(url, {
       method: 'POST',
       body: JSON.stringify(params),
       headers: {
-        'Content-Type': 'application/json',
-        ...(options?.headers || {})
+        'Content-Type': 'application/json'
       }
     });
     if (ret.ok) return (await ret.json()) as Res;

@@ -1,15 +1,21 @@
 import { join } from 'node:path';
-import { cwd } from 'node:process';
 import { existsSync, mkdirSync } from 'node:fs';
+import { fileURLToPath, URL } from 'node:url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
+import { type LimitForDay } from './limit-history';
 
-const DB_ROOT = join(cwd(), './db');
+console.log(import.meta.url);
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+
+const DB_ROOT = join(__dirname, 'db');
+
+console.log(DB_ROOT);
 
 const DB_TABLES_CONFIGS = {
   DB_LIMIT_HISTORY: {
     path: join(DB_ROOT, 'limit-history.json'),
-    default: (): { name: 'limit-history', rows: Array<{ date: string, items: Array<Array<string | number>> }> } => ({ name: 'limit-history', rows: [] }),
+    default: (): { name: 'limit-history', rows: Array<LimitForDay> } => ({ name: 'limit-history', rows: [] }),
   }
 };
 

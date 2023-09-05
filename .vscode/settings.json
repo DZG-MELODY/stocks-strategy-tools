@@ -17,5 +17,6 @@
       ],
       "url": "https://json.schemastore.org/electron-builder"
     }
-  ]
+  ],
+  "debug.javascript.unmapMissingSources": true
 }

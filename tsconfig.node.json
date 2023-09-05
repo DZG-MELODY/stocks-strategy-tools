@@ -17,6 +17,7 @@
   },
   "include": [
     "vite.config.ts",
+    "postcss.config.js",
     "package.json",
     "electron",
     "src/node-libs"
