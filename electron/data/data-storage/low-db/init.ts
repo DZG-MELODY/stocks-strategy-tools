@@ -1,14 +1,10 @@
 import { join } from 'node:path';
 import { existsSync, mkdirSync } from 'node:fs';
-import { fileURLToPath, URL } from 'node:url';
-import { Low } from 'lowdb';
-import { JSONFile } from 'lowdb/node';
+import { type Low } from 'lowdb';
+// import { JSONFile } from 'lowdb/node';
 import { type LimitForDay } from './limit-history';
 
-console.log(import.meta.url);
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-
-const DB_ROOT = join(__dirname, 'db');
+const DB_ROOT = join(__dirname, '..', 'low-db');
 
 console.log(DB_ROOT);
 
@@ -29,7 +25,9 @@ export type DbTablesMeta = {
 
 export const DB_TABLES = new Map<DbTableNames, DbTableInstances>();
 
-export const init = () => {
+export const init = async () => {
+  const { Low } = await import('lowdb');
+  const { JSONFile } = await import('lowdb/node');
   if (!existsSync(DB_ROOT)) mkdirSync(DB_ROOT);
   Object.entries(DB_TABLES_CONFIGS).forEach(([name, config]) => {
     DB_TABLES.set(name as DbTableNames, {

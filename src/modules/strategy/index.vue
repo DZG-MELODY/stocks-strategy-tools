@@ -1,20 +1,16 @@
 <script setup lang="ts">
+import { LimitForDay } from 'electron/data/data-storage/low-db';
 import { ref } from 'vue';
-import { fetchLimitHistoryForDay, covertStockItem } from '../../node-libs/data-fetch/df-share';
-import { setLimitHistory } from '../../node-libs/data-storage/low-db';
-import { HTTPResponseError } from '../../node-libs/request';
 
 
 defineOptions({ name: 'StrategyPage' });
 const dayStr = ref('');
 
 const onClickUpdate = async () => {
-  const ret = await fetchLimitHistoryForDay(dayStr.value);
-  if (ret instanceof HTTPResponseError) {
-    console.log(ret.message);
-  } else if (ret.data !== null) {
-    await setLimitHistory(dayStr.value, (ret.data?.pool || []).map(v => covertStockItem(v)));
-    console.log('update success');
+  const [success, result] = await window.dataFetcher.fetch('limitHistory', { day: '20230901' });
+  if (success === true) {
+    const row = (result as LimitForDay);
+    console.log(row.date, row.items);
   }
 };
 

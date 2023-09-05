@@ -1,4 +1,4 @@
-import { httpPost } from '../../request';
+import { httpPost } from '../../../utils/request';
 import { API_TOKEN } from './config';
 
 type BaseTuShareReq = {

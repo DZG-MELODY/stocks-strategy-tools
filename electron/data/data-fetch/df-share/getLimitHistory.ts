@@ -1,5 +1,5 @@
 import { type LimitForStock } from '../../data-storage/low-db';
-import { httpGet } from '../../request';
+import { httpGet } from '../../../utils/request';
 import { DPT, UT } from './config';
 
 type LimitListDayReq = {

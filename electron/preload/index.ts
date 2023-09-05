@@ -1,3 +1,11 @@
+import { contextBridge, ipcRenderer } from 'electron';
+import { DataFetchMaps } from '../data';
+
+contextBridge.exposeInMainWorld('dataFetcher', {
+  fetch: (method: keyof DataFetchMaps, ...args: Parameters<DataFetchMaps[typeof method]>): ReturnType<DataFetchMaps[typeof method]> =>
+    ipcRenderer.invoke('data-fetch', method, ...args)
+});
+
 function domReady(condition: DocumentReadyState[] = ['complete', 'interactive']) {
   return new Promise((resolve) => {
     if (condition.includes(document.readyState)) {

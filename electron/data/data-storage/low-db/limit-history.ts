@@ -23,7 +23,7 @@ export type LimitForDay = {
 }
 
 
-export const setLimitHistory = async (date: string, items: Array<LimitForStock>) => {
+export const setLimitHistoryForDay = async (date: string, items: Array<LimitForStock>) => {
   const table = await getTable('DB_LIMIT_HISTORY');
   const row = table.data.rows.find(v => v.date === date);
   if (row) {
@@ -40,5 +40,5 @@ export const setLimitHistory = async (date: string, items: Array<LimitForStock>)
 export const getLimitHistoryForDay = async (day: string) => {
   const table = await getTable('DB_LIMIT_HISTORY');
   const row = table.data.rows.find(v => v.date === day);
-  return row;
+  return row ?? false;
 };

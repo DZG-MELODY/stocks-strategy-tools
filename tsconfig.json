@@ -15,15 +15,15 @@
     ],
     "skipLibCheck": true,
     "noEmit": true,
-    "baseUrl": "./",
-    "paths": {
-      "@client": [
-        "src/*"
-      ],
-      "@electron": [
-        "electron/*"
-      ]
-    }
+    "baseUrl": "./"
+    // "paths": {
+    //   "@client": [
+    //     "src/*"
+    //   ],
+    //   "@electron": [
+    //     "electron/*"
+    //   ]
+    // }
   },
   "include": [
     "src"

@@ -1,6 +1,7 @@
 import { app, BrowserWindow, shell, ipcMain } from 'electron';
 import { release } from 'node:os';
 import { join } from 'node:path';
+import { DataInit } from '../data';
 
 // The built directory structure
 //
@@ -17,6 +18,7 @@ process.env.DIST = join(process.env.DIST_ELECTRON, '../dist');
 process.env.VITE_PUBLIC = process.env.VITE_DEV_SERVER_URL
   ? join(process.env.DIST_ELECTRON, '../public')
   : process.env.DIST;
+process.env.DB_ROOT = join(process.env.DIST, 'data', 'data-source');
 
 // Disable GPU Acceleration for Windows 7
 if (release().startsWith('6.1')) app.disableHardwareAcceleration();
@@ -50,7 +52,7 @@ async function createWindow() {
       // Consider using contextBridge.exposeInMainWorld
       // Read more on https://www.electronjs.org/docs/latest/tutorial/context-isolation
       nodeIntegration: true,
-      contextIsolation: false,
+      contextIsolation: true,
     },
   });
 
@@ -73,6 +75,9 @@ async function createWindow() {
     return { action: 'deny' };
   });
   // win.webContents.on('will-navigate', (event, url) => { }) #344
+
+  // init data
+  await DataInit();
 }
 
 app.whenReady().then(createWindow);

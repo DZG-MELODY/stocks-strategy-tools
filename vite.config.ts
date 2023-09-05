@@ -14,6 +14,13 @@ export default defineConfig(({ command }) => {
   const sourcemap = isServe || !!process.env.VSCODE_DEBUG;
 
   return {
+    define: {
+      process: {
+        env: {
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+        }
+      }
+    },
     resolve: {
       alias: {
         '@client': 'src',
