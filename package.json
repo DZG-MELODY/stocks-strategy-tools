@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "dev:vue": " cross-env DEV_TOOLS=vue concurrently \"pnpm exec vue-devtools\" \"pnpm dev\"",
+    "dev:vue": "cross-env DEV_TOOLS=vue concurrently \"pnpm exec vue-devtools\" \"pnpm dev\"",
     "build": "vue-tsc --noEmit && vite build && electron-builder",
     "preview": "vite preview"
   },
@@ -41,15 +41,16 @@
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.9",
     "vite-plugin-electron": "^0.14.0",
     "vite-plugin-electron-renderer": "^0.14.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
-    "vue-tsc": "^1.8.8"
-  },
-  "dependencies": {
+    "vue-tsc": "^1.8.8",
     "lowdb": "^6.0.1",
     "node-fetch": "^3.3.2"
-  }
+  },
+  "dependencies": {}
 }

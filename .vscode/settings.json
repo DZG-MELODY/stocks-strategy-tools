@@ -1,9 +1,10 @@
 {
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
   "vue.codeActions.enabled": false,
   "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "path-autocomplete.pathMappings": {
     "@client": "${workspace}/src",
@@ -18,5 +19,9 @@
       "url": "https://json.schemastore.org/electron-builder"
     }
   ],
-  "debug.javascript.unmapMissingSources": true
+  "debug.javascript.unmapMissingSources": true,
+  "cSpell.words": [
+    "observablehq",
+    "unplugin"
+  ]
 }

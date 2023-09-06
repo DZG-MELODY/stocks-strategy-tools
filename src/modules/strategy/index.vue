@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import { type LimitForStock, type LimitForDay } from '../../../electron/data';
 import { ref } from 'vue';
+import VerticalLayout from '../../components/layout/VerticalLayout.vue';
+import { type LimitForStock, type LimitForDay } from '../../../electron/data';
 
 defineOptions({ name: 'StrategyPage' });
-const dayStr = ref('');
 const router = useRouter();
 const stocks = ref<Array<LimitForStock>>([]);
 
@@ -20,6 +20,10 @@ const columnConfig = [
   {
     title: '行业',
     key: 'industry'
+  },
+  {
+    title:'涨跌幅',
+    key:'pct_chg'
   }
 ];
 
@@ -39,11 +43,20 @@ const onClickBack = () => {
 </script>
 
 <template>
-  <div class="w-full h-full overflow-y-auto">
-    <input v-model="dayStr" type="text">
-    <!-- <button @click="onClickUpdate">拉取数据</button> -->
-    <NButton type="primary" @click="onClickUpdate">拉取数据</NButton>
-    <NButton type="primary" @click="onClickBack">返回主页</NButton>
-    <NDataTable :columns="columnConfig" :data="stocks" virtual-scroll></NDataTable>
-  </div>
+  <vertical-layout>
+    <template #header>
+        <n-space align="center">
+          <n-button size="small" @click="onClickUpdate">拉取数据</n-button>
+          <n-button size="small" @click="onClickBack">返回主页</n-button>
+        </n-space>
+    </template>
+    <n-data-table 
+      class="h-full" 
+      :columns="columnConfig" 
+      :data="stocks" 
+      size="small" 
+      max-height="100%"
+      flex-height>
+    </n-data-table>
+  </vertical-layout>
 </template>

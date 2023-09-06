@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import electron from 'vite-plugin-electron';
 import renderer from 'vite-plugin-electron-renderer';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import pkg from './package.json';
 
 // https://vitejs.dev/config/
@@ -17,7 +20,8 @@ export default defineConfig(({ command }) => {
     define: {
       process: {
         env: {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+          DEV_TOOLS:JSON.stringify(process.env.DEV_TOOLS||'')
         }
       }
     },
@@ -29,6 +33,22 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       vue(),
+      AutoImport({
+        imports: [
+          'vue',
+          {
+            'naive-ui': [
+              'useDialog',
+              'useMessage',
+              'useNotification',
+              'useLoadingBar'
+            ]
+          }
+        ]
+      }),
+      Components({
+        resolvers: [NaiveUiResolver()]
+      }),
       electron([
         {
           // Main-Process entry file of the Electron App.
