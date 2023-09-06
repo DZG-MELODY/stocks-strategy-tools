@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <NConfigProvider class="w-full h-full">
-    <RouterView></RouterView>
-  </NConfigProvider>
+  <n-config-provider class="w-full h-full">
+    <router-view></router-view>
+  </n-config-provider>
 </template>

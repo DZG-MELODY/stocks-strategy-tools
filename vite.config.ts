@@ -2,6 +2,7 @@ import { rmSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import electron from 'vite-plugin-electron';
+// import { notBundle } from 'vite-plugin-electron/plugin';
 import renderer from 'vite-plugin-electron-renderer';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
@@ -21,14 +22,8 @@ export default defineConfig(({ command }) => {
       process: {
         env: {
           NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-          DEV_TOOLS:JSON.stringify(process.env.DEV_TOOLS||'')
+          DEV_TOOLS: JSON.stringify(process.env.DEV_TOOLS || '')
         }
-      }
-    },
-    resolve: {
-      alias: {
-        '@client': 'src',
-        '@electron': 'electron'
       }
     },
     plugins: [
@@ -61,6 +56,9 @@ export default defineConfig(({ command }) => {
             }
           },
           vite: {
+            // plugins: [
+            //   isServe && notBundle()
+            // ],
             build: {
               sourcemap,
               minify: isBuild,
@@ -79,6 +77,9 @@ export default defineConfig(({ command }) => {
             options.reload();
           },
           vite: {
+            // plugins: [
+            //   isServe && notBundle()
+            // ],
             build: {
               sourcemap: sourcemap ? 'inline' : undefined, // #332
               minify: isBuild,

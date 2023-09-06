@@ -22,8 +22,8 @@ const columnConfig = [
     key: 'industry'
   },
   {
-    title:'涨跌幅',
-    key:'pct_chg'
+    title: '涨跌幅',
+    key: 'pct_chg'
   }
 ];
 
@@ -45,18 +45,12 @@ const onClickBack = () => {
 <template>
   <vertical-layout>
     <template #header>
-        <n-space align="center">
-          <n-button size="small" @click="onClickUpdate">拉取数据</n-button>
-          <n-button size="small" @click="onClickBack">返回主页</n-button>
-        </n-space>
+      <n-space class="h-full" justify="end" align="center">
+        <n-button size="small" @click="onClickUpdate">拉取数据</n-button>
+        <n-button size="small" @click="onClickBack">返回主页</n-button>
+      </n-space>
     </template>
-    <n-data-table 
-      class="h-full" 
-      :columns="columnConfig" 
-      :data="stocks" 
-      size="small" 
-      max-height="100%"
-      flex-height>
+    <n-data-table class="h-full" :columns="columnConfig" :data="stocks" size="small" max-height="100%" flex-height>
     </n-data-table>
   </vertical-layout>
 </template>
