@@ -10,6 +10,7 @@ declare module 'vue' {
     BasePlot: typeof import('./src/components/BasePlot.vue')['default']
     LinePlot: typeof import('./src/components/LinePlot.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
+    NCalendar: typeof import('naive-ui')['NCalendar']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDataTable: typeof import('naive-ui')['NDataTable']
     NSpace: typeof import('naive-ui')['NSpace']

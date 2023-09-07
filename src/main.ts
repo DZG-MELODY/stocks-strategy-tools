@@ -17,6 +17,11 @@ const router = createRouter({
       name: 'strategy',
       path: '/strategy',
       component: () => import('./modules/strategy/index.vue')
+    },
+    {
+      name: 'data-manage',
+      path: '/data-manage',
+      component: () => import('./modules/data-manage/index.vue')
     }
   ]
 });
