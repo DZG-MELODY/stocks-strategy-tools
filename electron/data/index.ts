@@ -3,13 +3,14 @@ import { HTTPResponseError } from '../utils/request';
 import { fetchLimitHistoryForDay, covertStockItem } from './data-fetch/df-share';
 import { getLimitHistoryForDay, setLimitHistoryForDay, type LimitForDay } from './data-storage/low-db';
 import { init } from './data-storage/low-db/init';
+import { IndustryTrend, calcIndustryTrendForTimeline, getIndustryTrendForDay, getIndustryTrendForRange, setIndustryTrendForDay } from './data-storage/low-db/industry-trend';
 export type * from './data-storage/low-db';
 
 
-type DataResult<T, E = string> = [true, T] | [false, E]
+type DataResult<T extends { _tag: string }, E = string> = [true, T] | [false, E]
 
 
-function wrapResult<T, E = string>(ret: { success: true, result: T } | { success: false, result: E }): DataResult<T, E> {
+function wrapResult<T extends { _tag: string }, E = string>(ret: { success: true, result: T } | { success: false, result: E }): DataResult<T, E> {
   return ret.success === true ? [true, ret.result] : [false, ret.result];
 }
 
@@ -17,28 +18,49 @@ function wrapResult<T, E = string>(ret: { success: true, result: T } | { success
 export async function getLimitHistory(query: { day: string }): Promise<DataResult<LimitForDay>> {
   const { day } = query;
   const rows = await getLimitHistoryForDay(day);
-  if (rows !== false) return [true, rows];
-  const res = await fetchLimitHistoryForDay(day);
-  if (res instanceof HTTPResponseError) {
-    return wrapResult<LimitForDay>({ success: false, result: res.message });
-  } else if (res.data !== null) {
-    const rows = (res.data?.pool || []).map(v => covertStockItem(v));
-    await setLimitHistoryForDay(day, rows);
-    return wrapResult<LimitForDay>({ success: true, result: { date: day, items: rows } });
-  }
-  return wrapResult<LimitForDay>({ success: false, result: 'unknown error' });
+  if (rows === false) return [false, '数据不存在'];
+  return [true, rows];
 }
 
-export async function getTestData(seed: number): Promise<DataResult<Array<number>>> {
-  return wrapResult<Array<number>>({
-    success: true,
-    result: Array(seed).fill(1).map((v, i) => i + v)
-  });
+
+export async function getIndustryTrend(query: { start: string, end: string }): Promise<DataResult<IndustryTrend>> {
+   const {start,end} = query;
+   const rows = await getIndustryTrendForRange(start,end);
+   if(rows === false) return [false,'未生成数据'];
+   const trends = calcIndustryTrendForTimeline(rows);
+   return wrapResult<IndustryTrend>({success:true,result:trends});
 }
+
+
+export async function updateLimitForDay(query: { day: string }): Promise<DataResult<LimitForDay>> {
+  try {
+    const { day } = query;
+    const limitRows = await getLimitHistoryForDay(day);
+    const industryRows = await getIndustryTrendForDay(day);
+    // 数据存在时直接返回
+    if (limitRows !== false) {
+      if (industryRows === false) await setIndustryTrendForDay(day, limitRows.items);
+      return [true, limitRows];
+    }
+    // 请求数据
+    const res = await fetchLimitHistoryForDay(day);
+    if (res instanceof HTTPResponseError) return wrapResult<LimitForDay>({ success: false, result: res.message });
+    if (res.data === null) return [false, '当日无数据'];
+    const limitItems = (res.data?.pool || []).map(v => covertStockItem(v));
+    // 更新表
+    await setLimitHistoryForDay(day, limitItems);
+    await setIndustryTrendForDay(day, limitItems);
+    return wrapResult<LimitForDay>({ success: true, result: { _tag: 'LimitForDay', date: day, items: limitItems } });
+  } catch (error) {
+    return [false, error.message || '未知错误'];
+  }
+}
+
 
 const DataFetchMaps = {
+  updateLimitForDay: updateLimitForDay,
   limitHistory: getLimitHistory,
-  testData: getTestData
+  getIndustryTrend:getIndustryTrend
 };
 
 export type DataFetchMaps = typeof DataFetchMaps

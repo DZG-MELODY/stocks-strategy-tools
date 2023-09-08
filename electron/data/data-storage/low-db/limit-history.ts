@@ -1,6 +1,7 @@
 import { getTable } from './utils';
 
 export type LimitForStock = {
+  _tag: 'LimitForStock',
   // 代码
   code: string,
   // 名称
@@ -18,6 +19,7 @@ export type LimitForStock = {
 }
 
 export type LimitForDay = {
+  _tag: 'LimitForDay',
   date: string,
   items: Array<LimitForStock>
 }
@@ -25,11 +27,13 @@ export type LimitForDay = {
 
 export const setLimitHistoryForDay = async (date: string, items: Array<LimitForStock>) => {
   const table = await getTable('DB_LIMIT_HISTORY');
+  if (table.data.name !== 'limit-history') return;
   const row = table.data.rows.find(v => v.date === date);
   if (row) {
     row.items = items;
   } else {
     table.data.rows.push({
+      _tag:'LimitForDay',
       date: date,
       items: items
     });
@@ -39,6 +43,7 @@ export const setLimitHistoryForDay = async (date: string, items: Array<LimitForS
 
 export const getLimitHistoryForDay = async (day: string) => {
   const table = await getTable('DB_LIMIT_HISTORY');
+  if (table.data.name !== 'limit-history') return false;
   const row = table.data.rows.find(v => v.date === day);
   return row ?? false;
 };

@@ -7,12 +7,14 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    BasePlot: typeof import('./src/components/BasePlot.vue')['default']
-    LinePlot: typeof import('./src/components/LinePlot.vue')['default']
+    BasePlot: typeof import('./src/components/charts/BasePlot.vue')['default']
+    LinePlot: typeof import('./src/components/charts/LinePlot.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NCalendar: typeof import('naive-ui')['NCalendar']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDataTable: typeof import('naive-ui')['NDataTable']
+    NDatePicker: typeof import('naive-ui')['NDatePicker']
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
     NSpace: typeof import('naive-ui')['NSpace']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

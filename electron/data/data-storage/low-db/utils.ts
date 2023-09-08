@@ -1,5 +1,5 @@
 import { type Low } from "lowdb";
-import { DB_TABLES, DbTableNames, DbTablesMeta } from "./init";
+import { DB_TABLES, DbTableNames, DbTablesMeta } from "./config";
 
 
 export async function getTable<T extends DbTableNames>(name: DbTableNames) {

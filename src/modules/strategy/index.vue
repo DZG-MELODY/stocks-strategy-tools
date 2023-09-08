@@ -1,56 +1,43 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref,reactive } from 'vue';
 import VerticalLayout from '../../components/layout/VerticalLayout.vue';
-import { type LimitForStock, type LimitForDay } from '../../../electron/data';
+import IndustryTrendLine from './components/industry-trend-line.vue';
+import {convertToDay} from '../../utils/time';
+import { IndustryTrendItem } from 'electron/data/data-storage/low-db/industry-trend';
 
 defineOptions({ name: 'StrategyPage' });
-const router = useRouter();
-const stocks = ref<Array<LimitForStock>>([]);
+const range = ref<[number,number]>([Date.now()-1000*3600*24*14 ,Date.now()]);
+const trendData = reactive<{industries:Array<string>,trends:Array<IndustryTrendItem>}>({
+  industries:[],
+  trends:[]
+});
 
-const columnConfig = [
-  {
-    title: '代码',
-    key: 'code'
-  },
-  {
-    title: '名称',
-    key: 'name'
-  },
-  {
-    title: '行业',
-    key: 'industry'
-  },
-  {
-    title: '涨跌幅',
-    key: 'pct_chg'
-  }
-];
-
-const onClickUpdate = async () => {
-  const [success, result] = await window.dataFetcher.fetch('limitHistory', { day: '20230901' });
-  if (success === true) {
-    const row = (result as LimitForDay);
-    stocks.value = row.items;
-    console.log(row.date, row.items);
+const onClickFetch = async () => {
+  const [success, result] = await window.dataFetcher.fetch('getIndustryTrend', { start:convertToDay(range.value[0]),end:convertToDay(range.value[1])});
+  if (success === true && result._tag === 'IndustryTrend') {
+     trendData.industries = result.items.map(v=>v.industry);
+     trendData.trends = result.items;
   }
 };
 
-const onClickBack = () => {
-  router.push({ name: 'home' });
-};
 
 </script>
 
 <template>
   <vertical-layout>
     <template #header>
-      <n-space class="h-full" justify="end" align="center">
-        <n-button size="small" @click="onClickUpdate">拉取数据</n-button>
-        <n-button size="small" @click="onClickBack">返回主页</n-button>
+      <n-space class="h-full w-full mx-3" justify="end" align="center">
+        <n-date-picker v-model:value="range" type="daterange" clearable />
+        <n-button size="small" @click="onClickFetch">获取数据</n-button>
       </n-space>
     </template>
-    <n-data-table class="h-full" :columns="columnConfig" :data="stocks" size="small" max-height="100%" flex-height>
-    </n-data-table>
+    <div class="w-full h-full p-3 flex flex-row">
+      <div class="flex-1">
+         <industry-trend-line :trends="trendData.trends" :industries="trendData.industries"></industry-trend-line>
+      </div>
+      <div class="w-40 border-l-2 border-green-500">
+
+      </div>
+    </div>
   </vertical-layout>
 </template>

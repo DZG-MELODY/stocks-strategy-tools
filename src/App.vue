@@ -4,6 +4,8 @@
 
 <template>
   <n-config-provider class="w-full h-full">
-    <router-view></router-view>
+    <n-message-provider>
+      <router-view></router-view>
+    </n-message-provider>
   </n-config-provider>
 </template>
