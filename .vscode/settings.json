@@ -25,6 +25,7 @@
   "debug.javascript.unmapMissingSources": true,
   "cSpell.words": [
     "observablehq",
+    "tailwindcss",
     "unplugin"
   ]
 }

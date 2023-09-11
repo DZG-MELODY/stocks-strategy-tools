@@ -41,7 +41,6 @@ const plotOptions = reactive<{ options: PlotOptions }>({
 });
 
 const genLineMarks = (data: Array<{ date: Date, industry: string, limit_count: number }>): Array<Line> => {
-  console.log(data);
   return [
     lineY(data, { x: 'date', y: 'limit_count', stroke: 'industry', strokeWidth: 2, }),
     tip(data, pointerX({ x: 'date', y: 'limit_count' }))

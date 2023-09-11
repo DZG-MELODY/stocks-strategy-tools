@@ -82,20 +82,22 @@ export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendF
   const placeholderItems: Array<{ date: string, limit_count: number }> = [];
   for (let i = 0; i < timeLen; i++) {
     const { date, items } = limitForRange[i];
-    placeholderItems.push({ date: date, limit_count: 0 });
     items.forEach(v => {
       if (industryMap.has(v.industry)) {
         industryMap.get(v.industry).push({ date: date, limit_count: v.limit_count });
       } else {
-        industryMap.set(v.industry, [...placeholderItems]);
+        //补充前零值
+        industryMap.set(v.industry, [...placeholderItems, { date: date, limit_count: v.limit_count }]);
       }
-      industryMap.forEach(item => {
-        if (item.length === i) item.push({ date: date, limit_count: 0 });
-      });
     });
+    // 补充后零值
+    industryMap.forEach(item => {
+      if (item.length === i) item.push({ date: date, limit_count: 0 });
+    });
+    placeholderItems.push({ date: date, limit_count: 0 });
   }
   return {
-    _tag:'IndustryTrend',
-    items: Array.from(industryMap.entries()).map(([industry,items])=>({industry,trends:items}))
+    _tag: 'IndustryTrend',
+    items: Array.from(industryMap.entries()).map(([industry, items]) => ({ industry, trends: items }))
   };
 };

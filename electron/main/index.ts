@@ -1,4 +1,4 @@
-import { app, BrowserWindow, shell, ipcMain, Menu } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, Menu, screen } from 'electron';
 import { release } from 'node:os';
 import { join } from 'node:path';
 import { DataInit } from '../data';
@@ -43,8 +43,12 @@ const url = process.env.VITE_DEV_SERVER_URL;
 const indexHtml = join(process.env.DIST, 'index.html');
 
 async function createWindow() {
+  const primaryDisplay = screen.getPrimaryDisplay();
+  const { width, height } = primaryDisplay.workAreaSize;
   win = new BrowserWindow({
     title: '策略工具',
+    width,
+    height,
     icon: join(process.env.VITE_PUBLIC, 'favicon.ico'),
     webPreferences: {
       preload,
