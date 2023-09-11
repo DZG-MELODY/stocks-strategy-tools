@@ -105,16 +105,18 @@ export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendF
 
 
 export type IndustryLimitStockItem = LimitForStock & { date: string }
-export type IndustryLimitStocks = { _tag: 'IndustryLimitStocks', items: Array<IndustryLimitStockItem> }
+export type IndustryLimitStocks = { _tag: 'IndustryLimitStocks', items: Array<IndustryLimitStockItem>, days: Array<string> }
 
 export const getLimitStocksForIndustry = async (industry: string, start: string, end: string) => {
   const rows = await getIndustryTrendForRange(start, end);
   if (rows === false) return false;
   const stocks: Array<IndustryLimitStockItem> = [];
+  const days: Array<string> = [];
   rows.forEach(r => {
+    days.push(r.date);
     const industryItem = r.items.filter(v => v.industry === industry);
     const temp = industryItem.map(v => v.limit_stocks.map(s => ({ date: r.date, ...s }))).reduce((p, c) => p.concat(...c), []);
     stocks.push(...temp);
   });
-  return { _tag: 'IndustryLimitStocks' as const, items: stocks };
+  return { _tag: 'IndustryLimitStocks' as const, items: stocks, days };
 };

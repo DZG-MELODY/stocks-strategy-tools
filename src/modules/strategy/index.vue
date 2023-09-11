@@ -24,19 +24,20 @@ const onClickFetch = async () => {
 };
 
 const onClickFilterForToday = () => {
-  const industryForToday = trendData.trends.filter(v => v.trends.find(t => t.date === convertToDay(Date.now()))?.limit_count || 0 > 1).map(i => i.industry);
+  const today = convertToDay(range.value[1]);
+  const industryForToday = trendData.trends.filter(v => v.trends.find(t => t.date === today)?.limit_count || 0 > 1).map(i => i.industry);
   trendData.industries = industryForToday;
 };
 
 const onClickToIndustryDetail = (industry: string) => {
   router.push({
     name: 'industry-detail',
-    params: {
+    params:{
       industry,
       start: convertToDay(range.value[0]),
       end: convertToDay(range.value[1])
     }
-  });
+  }).catch((err)=>console.log(err.message));
 };
 
 </script>

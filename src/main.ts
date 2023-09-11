@@ -17,13 +17,11 @@ const router = createRouter({
       name: 'strategy',
       path: '/strategy',
       component: () => import('./modules/strategy/index.vue'),
-      children: [
-        {
-          name: 'industry-detail',
-          path: '/industry-detail',
-          component: () => import('./modules/strategy/industry-detail.vue')
-        }
-      ]
+    },
+    {
+      name: 'industry-detail',
+      path: '/industry-detail/:industry/:start/:end',
+      component: () => import('./modules/strategy/industry-detail.vue')
     },
     {
       name: 'data-manage',
