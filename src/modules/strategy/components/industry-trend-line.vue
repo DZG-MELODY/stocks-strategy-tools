@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Line, lineY, tip, pointerX, type PlotOptions } from '@observablehq/plot';
+import { Line, lineY, type PlotOptions } from '@observablehq/plot';
 import { onMounted, reactive, computed, watch } from 'vue';
 import BasePlot from '../../../components/charts/BasePlot.vue';
 import { IndustryTrendItem } from 'electron/data/data-storage/low-db/industry-trend';
@@ -42,8 +42,8 @@ const plotOptions = reactive<{ options: PlotOptions }>({
 
 const genLineMarks = (data: Array<{ date: Date, industry: string, limit_count: number }>): Array<Line> => {
   return [
-    lineY(data, { x: 'date', y: 'limit_count', stroke: 'industry', strokeWidth: 2, }),
-    tip(data, pointerX({ x: 'date', y: 'limit_count' }))
+    lineY(data, { x: 'date', y: 'limit_count', stroke: 'industry', strokeWidth: 2, tip: 'x' }),
+    // tip(data, pointerX({ x: 'date', y: 'limit_count' }))
   ];
 };
 

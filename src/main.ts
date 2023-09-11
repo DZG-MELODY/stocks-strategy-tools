@@ -16,7 +16,14 @@ const router = createRouter({
     {
       name: 'strategy',
       path: '/strategy',
-      component: () => import('./modules/strategy/index.vue')
+      component: () => import('./modules/strategy/index.vue'),
+      children: [
+        {
+          name: 'industry-detail',
+          path: '/industry-detail',
+          component: () => import('./modules/strategy/industry-detail.vue')
+        }
+      ]
     },
     {
       name: 'data-manage',
@@ -27,9 +34,9 @@ const router = createRouter({
 });
 
 // naive-ui 与 tailwind 样式覆盖
-// const meta = document.createElement('meta');
-// meta.name = 'naive-ui-style';
-// document.head.appendChild(meta);
+const meta = document.createElement('meta');
+meta.name = 'naive-ui-style';
+document.head.appendChild(meta);
 
 createApp(App)
   .use(router)

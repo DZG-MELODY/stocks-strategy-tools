@@ -56,7 +56,7 @@ export const getIndustryTrendForDay = async (day: string) => {
 export const getIndustryTrendForRange = async (start: string, end: string) => {
   const table = await getTable('DB_INDUSTRY_TREND');
   if (table.data.name !== 'industry-trend') return false;
-  const rows = table.data.rows.filter(v => v.date >= start && v.date <= end).map(v => ({ ...v }));
+  const rows = table.data.rows.filter(v => v.date >= start && v.date <= end).map(v => ({ ...v })).sort((v1, v2) => v1.date > v2.date ? 1 : -1);
   return rows;
 };
 
@@ -74,7 +74,7 @@ export type IndustryTrend = {
   items: Array<IndustryTrendItem>
 }
 
-
+// 计算行业趋势时间线
 export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendForDay>): IndustryTrend => {
   const industryMap = new Map<string, Array<{ date: string, limit_count: number }>>;
   const timeLen = limitForRange.length;
@@ -100,4 +100,21 @@ export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendF
     _tag: 'IndustryTrend',
     items: Array.from(industryMap.entries()).map(([industry, items]) => ({ industry, trends: items }))
   };
+};
+
+
+
+export type IndustryLimitStockItem = LimitForStock & { date: string }
+export type IndustryLimitStocks = { _tag: 'IndustryLimitStocks', items: Array<IndustryLimitStockItem> }
+
+export const getLimitStocksForIndustry = async (industry: string, start: string, end: string) => {
+  const rows = await getIndustryTrendForRange(start, end);
+  if (rows === false) return false;
+  const stocks: Array<IndustryLimitStockItem> = [];
+  rows.forEach(r => {
+    const industryItem = r.items.filter(v => v.industry === industry);
+    const temp = industryItem.map(v => v.limit_stocks.map(s => ({ date: r.date, ...s }))).reduce((p, c) => p.concat(...c), []);
+    stocks.push(...temp);
+  });
+  return { _tag: 'IndustryLimitStocks' as const, items: stocks };
 };

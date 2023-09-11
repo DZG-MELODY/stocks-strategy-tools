@@ -3,7 +3,7 @@ import { HTTPResponseError } from '../utils/request';
 import { fetchLimitHistoryForDay, covertStockItem } from './data-fetch/df-share';
 import { getLimitHistoryForDay, setLimitHistoryForDay, type LimitForDay } from './data-storage/low-db';
 import { init } from './data-storage/low-db/init';
-import { IndustryTrend, calcIndustryTrendForTimeline, getIndustryTrendForDay, getIndustryTrendForRange, setIndustryTrendForDay } from './data-storage/low-db/industry-trend';
+import { IndustryTrend, calcIndustryTrendForTimeline, getIndustryTrendForDay, getIndustryTrendForRange, setIndustryTrendForDay, getLimitStocksForIndustry, type IndustryLimitStocks } from './data-storage/low-db/industry-trend';
 export type * from './data-storage/low-db';
 
 
@@ -24,11 +24,20 @@ export async function getLimitHistory(query: { day: string }): Promise<DataResul
 
 
 export async function getIndustryTrend(query: { start: string, end: string }): Promise<DataResult<IndustryTrend>> {
-   const {start,end} = query;
-   const rows = await getIndustryTrendForRange(start,end);
-   if(rows === false) return [false,'未生成数据'];
-   const trends = calcIndustryTrendForTimeline(rows);
-   return wrapResult<IndustryTrend>({success:true,result:trends});
+  const { start, end } = query;
+  const rows = await getIndustryTrendForRange(start, end);
+  if (rows === false) return [false, '未生成数据'];
+  const trends = calcIndustryTrendForTimeline(rows);
+  return wrapResult<IndustryTrend>({ success: true, result: trends });
+}
+
+
+
+export async function getIndustryLimitStocks(query: { industry: string, start: string, end: string }): Promise<DataResult<IndustryLimitStocks>> {
+  const { industry, start, end } = query;
+  const ret = await getLimitStocksForIndustry(industry, start, end);
+  if (ret === false) return [false, '未生成数据'];
+  return wrapResult<IndustryLimitStocks>({ success: true, result: ret });
 }
 
 
@@ -60,7 +69,8 @@ export async function updateLimitForDay(query: { day: string }): Promise<DataRes
 const DataFetchMaps = {
   updateLimitForDay: updateLimitForDay,
   limitHistory: getLimitHistory,
-  getIndustryTrend:getIndustryTrend
+  getIndustryTrend: getIndustryTrend,
+  getIndustryLimitStocks: getIndustryLimitStocks
 };
 
 export type DataFetchMaps = typeof DataFetchMaps

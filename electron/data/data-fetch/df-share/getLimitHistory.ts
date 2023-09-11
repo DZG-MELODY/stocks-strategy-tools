@@ -44,6 +44,7 @@ export const fetchLimitHistoryForDay = (day: string) => httpGet<LimitListDayReq,
 );
 
 export const covertStockItem = (item: StockItem): LimitForStock => ({
+  _tag: 'LimitForStock',
   code: item.c,
   name: item.n,
   pct_chg: item.zdp,
