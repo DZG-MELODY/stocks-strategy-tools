@@ -4761,6 +4761,508 @@
           "industry": "通信设备"
         }
       ]
+    },
+    {
+      "_tag": "LimitForDay",
+      "date": "20230912",
+      "items": [
+        {
+          "_tag": "LimitForStock",
+          "code": "603023",
+          "name": "威帝股份",
+          "pct_chg": 10,
+          "turnover_ratio": 3.260580062866211,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "汽车零部"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600520",
+          "name": "文一科技",
+          "pct_chg": 9.970458030700684,
+          "turnover_ratio": 6.333907604217529,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "专用设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603887",
+          "name": "城地香江",
+          "pct_chg": 10,
+          "turnover_ratio": 12.665735244750977,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "互联网服"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000851",
+          "name": "高鸿股份",
+          "pct_chg": 10.03184700012207,
+          "turnover_ratio": 9.409162521362305,
+          "has_fail": false,
+          "limit_times": 3,
+          "industry": "通信设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "605365",
+          "name": "立达信",
+          "pct_chg": 10.030029296875,
+          "turnover_ratio": 24.49016761779785,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "家电行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600719",
+          "name": "大连热电",
+          "pct_chg": 10.027100563049316,
+          "turnover_ratio": 10.233466148376465,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "电力行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "001313",
+          "name": "粤海饲料",
+          "pct_chg": 9.967496871948242,
+          "turnover_ratio": 17.792407989501953,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "农牧饲渔"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002166",
+          "name": "莱茵生物",
+          "pct_chg": 10.027100563049316,
+          "turnover_ratio": 14.804877281188965,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "中药"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002902",
+          "name": "铭普光磁",
+          "pct_chg": 10.00401782989502,
+          "turnover_ratio": 20.665966033935547,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "通信设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600725",
+          "name": "云维股份",
+          "pct_chg": 10.06944465637207,
+          "turnover_ratio": 1.1581839323043823,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "煤炭行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603917",
+          "name": "合力科技",
+          "pct_chg": 10.005053520202637,
+          "turnover_ratio": 4.473546028137207,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "汽车零部"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603607",
+          "name": "京华激光",
+          "pct_chg": 10,
+          "turnover_ratio": 8.349153518676758,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "造纸印刷"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300255",
+          "name": "常山药业",
+          "pct_chg": 20.07504653930664,
+          "turnover_ratio": 10.802395820617676,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "化学制药"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000813",
+          "name": "德展健康",
+          "pct_chg": 10.094637870788574,
+          "turnover_ratio": 2.4335873126983643,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "化学制药"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "601188",
+          "name": "龙江交通",
+          "pct_chg": 9.969788551330566,
+          "turnover_ratio": 3.7558209896087646,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "铁路公路"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000766",
+          "name": "通化金马",
+          "pct_chg": 10.04672908782959,
+          "turnover_ratio": 7.382331848144531,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "化学制药"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002281",
+          "name": "光迅科技",
+          "pct_chg": 10.017271041870117,
+          "turnover_ratio": 7.383513927459717,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "通信设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002957",
+          "name": "科瑞技术",
+          "pct_chg": 10,
+          "turnover_ratio": 4.90446138381958,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "专用设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600186",
+          "name": "莲花健康",
+          "pct_chg": 9.979209899902344,
+          "turnover_ratio": 8.991189002990723,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "食品饮料"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603348",
+          "name": "文灿股份",
+          "pct_chg": 10.002577781677246,
+          "turnover_ratio": 4.145845890045166,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "汽车零部"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "601908",
+          "name": "京运通",
+          "pct_chg": 9.936574935913086,
+          "turnover_ratio": 2.715789318084717,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "电力行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002355",
+          "name": "兴民智通",
+          "pct_chg": 10.059171676635742,
+          "turnover_ratio": 21.50591278076172,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "汽车零部"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000536",
+          "name": "华映科技",
+          "pct_chg": 9.965636253356934,
+          "turnover_ratio": 20.461759567260742,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "光学光电"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002165",
+          "name": "红 宝 丽",
+          "pct_chg": 10.04672908782959,
+          "turnover_ratio": 16.658079147338867,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "化学制品"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600839",
+          "name": "四川长虹",
+          "pct_chg": 10.071942329406738,
+          "turnover_ratio": 8.947881698608398,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "家电行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300731",
+          "name": "科创新源",
+          "pct_chg": 20.02037811279297,
+          "turnover_ratio": 17.907678604125977,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "橡胶制品"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "001268",
+          "name": "联合精密",
+          "pct_chg": 9.985040664672852,
+          "turnover_ratio": 56.013057708740234,
+          "has_fail": true,
+          "limit_times": 3,
+          "industry": "通用设备"
+        }
+      ]
+    },
+    {
+      "_tag": "LimitForDay",
+      "date": "20230913",
+      "items": [
+        {
+          "_tag": "LimitForStock",
+          "code": "000592",
+          "name": "平潭发展",
+          "pct_chg": 9.885931968688965,
+          "turnover_ratio": 3.525161027908325,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "农牧饲渔"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "003016",
+          "name": "欣贺股份",
+          "pct_chg": 9.979633331298828,
+          "turnover_ratio": 2.2310850620269775,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "纺织服装"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600802",
+          "name": "福建水泥",
+          "pct_chg": 9.980806350708008,
+          "turnover_ratio": 9.526840209960938,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "水泥建材"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "605365",
+          "name": "立达信",
+          "pct_chg": 9.989082336425781,
+          "turnover_ratio": 3.5054280757904053,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "家电行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300300",
+          "name": "海峡创新",
+          "pct_chg": 20.046619415283203,
+          "turnover_ratio": 13.72081184387207,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "互联网服"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603909",
+          "name": "建发合诚",
+          "pct_chg": 10.039215087890625,
+          "turnover_ratio": 0.7790372967720032,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "工程咨询"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603162",
+          "name": "海通发展",
+          "pct_chg": 10.011641502380371,
+          "turnover_ratio": 24.024555206298828,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "航运港口"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603607",
+          "name": "京华激光",
+          "pct_chg": 10.027547836303711,
+          "turnover_ratio": 6.584930896759033,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "造纸印刷"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300637",
+          "name": "扬帆新材",
+          "pct_chg": 19.976905822753906,
+          "turnover_ratio": 24.253355026245117,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "电子化学"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000766",
+          "name": "通化金马",
+          "pct_chg": 9.978768348693848,
+          "turnover_ratio": 13.620549201965332,
+          "has_fail": true,
+          "limit_times": 3,
+          "industry": "化学制药"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000536",
+          "name": "华映科技",
+          "pct_chg": 10,
+          "turnover_ratio": 10.625658988952637,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "光学光电"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603933",
+          "name": "睿能科技",
+          "pct_chg": 9.994086265563965,
+          "turnover_ratio": 5.448917865753174,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "半导体"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000797",
+          "name": "中国武夷",
+          "pct_chg": 9.969788551330566,
+          "turnover_ratio": 8.422200202941895,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "房地产开"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000632",
+          "name": "三木集团",
+          "pct_chg": 9.976798057556152,
+          "turnover_ratio": 12.234739303588867,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "综合行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002761",
+          "name": "浙江建投",
+          "pct_chg": 10.022107124328613,
+          "turnover_ratio": 4.931463241577148,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "工程建设"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000058",
+          "name": "深 赛 格",
+          "pct_chg": 9.972298622131348,
+          "turnover_ratio": 6.810240745544434,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "商业百货"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "001268",
+          "name": "联合精密",
+          "pct_chg": 9.996600151062012,
+          "turnover_ratio": 52.75312805175781,
+          "has_fail": false,
+          "limit_times": 4,
+          "industry": "通用设备"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000010",
+          "name": "美丽生态",
+          "pct_chg": 9.929078102111816,
+          "turnover_ratio": 16.140789031982422,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "工程建设"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002310",
+          "name": "东方园林",
+          "pct_chg": 10.204081535339355,
+          "turnover_ratio": 9.960309982299805,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "环保行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000826",
+          "name": "启迪环境",
+          "pct_chg": 9.90338134765625,
+          "turnover_ratio": 14.17791748046875,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "环保行业"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002855",
+          "name": "捷荣技术",
+          "pct_chg": 10.018132209777832,
+          "turnover_ratio": 19.843326568603516,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "消费电子"
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300293",
+          "name": "蓝英装备",
+          "pct_chg": 20.022560119628906,
+          "turnover_ratio": 40.30421829223633,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "专用设备"
+        }
+      ]
     }
   ]
 }

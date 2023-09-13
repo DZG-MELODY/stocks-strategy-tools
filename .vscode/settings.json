@@ -24,6 +24,7 @@
   ],
   "debug.javascript.unmapMissingSources": true,
   "cSpell.words": [
+    "daterange",
     "observablehq",
     "tailwindcss",
     "unplugin"

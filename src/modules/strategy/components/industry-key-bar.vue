@@ -52,7 +52,7 @@ watch(renderData, () => {
 </script>
 
 <template>
-  <div class="w-full h-full bg-gray-300 flex flex-col items-center justify-center">
+  <div class="w-full h-full flex flex-col items-center justify-center overflow-scroll">
     <BasePlot :options="plotOptions.options" />
   </div>
 </template>

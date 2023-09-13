@@ -25,5 +25,15 @@ watch(props.options, () => {
 
 </script>
 <template>
-  <div ref="plotRoot" />
+  <div ref="plotRoot" class="plot-root w-full h-full py-[15px]"></div>
 </template>
+<style scoped>
+/* .plot-root :deep(figure) {
+  width: 100%;
+  height: 100%;
+}
+.plot-root :deep(svg) {
+  width: 100%;
+  height: 100%;
+} */
+</style>

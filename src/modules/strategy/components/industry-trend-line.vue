@@ -3,7 +3,6 @@ import { Line, lineY, type PlotOptions } from '@observablehq/plot';
 import { onMounted, reactive, computed, watch } from 'vue';
 import BasePlot from '../../../components/charts/BasePlot.vue';
 import { IndustryTrendItem } from 'electron/data/data-storage/low-db/industry-trend';
-import { dayToDate } from '../../../utils/time';
 
 const props = withDefaults(defineProps<{
   trends: Array<IndustryTrendItem>,
@@ -11,11 +10,12 @@ const props = withDefaults(defineProps<{
 }>(),
   {});
 
-const renderData = computed<Array<{ date: Date, industry: string, limit_count: number }>>(() => {
-  const line: Array<{ date: Date, industry: string, limit_count: number }> = [];
+
+const renderData = computed<Array<{ date: string, industry: string, limit_count: number }>>(() => {
+  const line: Array<{ date: string, industry: string, limit_count: number }> = [];
   props.trends.forEach(t => {
     if (props.industries.length === 0 || props.industries.includes(t.industry)) {
-      line.push(...t.trends.map(v => ({ date: dayToDate(v.date), limit_count: v.limit_count, industry: t.industry })));
+      line.push(...t.trends.map(v => ({ date: v.date.slice(4), limit_count: v.limit_count, industry: t.industry })));
     }
   });
   return line;
@@ -29,9 +29,14 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // subtitle: 'data sub title',
     // caption: 'data caption',
     margin: 60,
+    x: {
+      grid: true,
+      type: 'point',
+    },
     y: {
       grid: true,
-      label: 'count'
+      label: 'count',
+      interval: 1
     },
     color: {
       legend: true
@@ -40,9 +45,9 @@ const plotOptions = reactive<{ options: PlotOptions }>({
   }
 });
 
-const genLineMarks = (data: Array<{ date: Date, industry: string, limit_count: number }>): Array<Line> => {
+const genLineMarks = (data: Array<{ date: string, industry: string, limit_count: number }>): Array<Line> => {
   return [
-    lineY(data, { x: 'date', y: 'limit_count', stroke: 'industry', strokeWidth: 2, tip: 'x' }),
+    lineY(data, { x: 'date', y: 'limit_count', stroke: 'industry', strokeWidth: 2, tip: 'xy' }),
     // tip(data, pointerX({ x: 'date', y: 'limit_count' }))
   ];
 };
@@ -59,7 +64,7 @@ watch(renderData, () => {
 </script>
 
 <template>
-  <div class="w-full h-full bg-gray-300 flex flex-col items-center justify-center">
+  <div class="w-full h-full flex flex-col items-center justify-center overflow-scroll">
     <BasePlot :options="plotOptions.options" />
   </div>
 </template>

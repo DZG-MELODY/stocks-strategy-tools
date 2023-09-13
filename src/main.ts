@@ -19,11 +19,6 @@ const router = createRouter({
       component: () => import('./modules/strategy/index.vue'),
     },
     {
-      name: 'industry-detail',
-      path: '/industry-detail/:industry/:start/:end',
-      component: () => import('./modules/strategy/industry-detail.vue')
-    },
-    {
       name: 'data-manage',
       path: '/data-manage',
       component: () => import('./modules/data-manage/index.vue')
