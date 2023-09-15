@@ -1,7 +1,7 @@
 import { LimitForStock } from './limit-history';
 import { getTable } from './utils';
 
-export type LimitForTrend = {
+export type LimitForIndustry = {
   _tag: 'LimitForTrend',
   // 行业板块
   industry: string,
@@ -16,11 +16,11 @@ export type IndustryTrendForDay = {
   // 日期
   date: string,
   // 行业趋势项
-  items: Array<LimitForTrend>
+  items: Array<LimitForIndustry>
 }
 
-const calcIndustryTrendForDay = (items: Array<LimitForStock>): Array<LimitForTrend> => {
-  const industrySet = new Map<string, LimitForTrend>();
+const calcIndustryTrendForDay = (items: Array<LimitForStock>): Array<LimitForIndustry> => {
+  const industrySet = new Map<string, LimitForIndustry>();
   items.forEach((v) => {
     if (!industrySet.has(v.industry)) industrySet.set(v.industry, { _tag: 'LimitForTrend', industry: v.industry, limit_count: 0, limit_stocks: [] });
     const item = industrySet.get(v.industry);
@@ -107,7 +107,7 @@ export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendF
 export type IndustryLimitStockItem = LimitForStock & { date: string }
 export type IndustryLimitStocks = { _tag: 'IndustryLimitStocks', items: Array<IndustryLimitStockItem>, days: Array<string> }
 
-export const getLimitStocksForIndustry = async (industry: string, start: string, end: string) => {
+export const getLimitStocksForIndustry = async (industry: string, start: string, end: string): Promise<IndustryLimitStocks | false> => {
   const rows = await getIndustryTrendForRange(start, end);
   if (rows === false) return false;
   const stocks: Array<IndustryLimitStockItem> = [];
@@ -118,5 +118,5 @@ export const getLimitStocksForIndustry = async (industry: string, start: string,
     const temp = industryItem.map(v => v.limit_stocks.map(s => ({ date: r.date, ...s }))).reduce((p, c) => p.concat(...c), []);
     stocks.push(...temp);
   });
-  return { _tag: 'IndustryLimitStocks' as const, items: stocks, days };
+  return { _tag: 'IndustryLimitStocks', items: stocks, days };
 };

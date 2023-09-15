@@ -15,7 +15,7 @@ export type LimitForStock = {
   // 连板数
   limit_times: number,
   // 行业板块
-  industry: string
+  industry: string,
 }
 
 export type LimitForDay = {
@@ -33,7 +33,7 @@ export const setLimitHistoryForDay = async (date: string, items: Array<LimitForS
     row.items = items;
   } else {
     table.data.rows.push({
-      _tag:'LimitForDay',
+      _tag: 'LimitForDay',
       date: date,
       items: items
     });

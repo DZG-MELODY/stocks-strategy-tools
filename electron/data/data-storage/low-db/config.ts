@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { type Low } from 'lowdb';
 import { type LimitForDay } from './limit-history';
 import { IndustryTrendForDay } from './industry-trend';
+import { TopicTrendForDay } from './topic-trend';
 
 export const DB_ROOT = process.env.NODE_ENV === 'development' ? join(cwd(), 'db', 'low-db') : join(__dirname, '..', 'low-db');
 
@@ -14,6 +15,10 @@ export const DB_TABLES_CONFIGS = {
   DB_INDUSTRY_TREND: {
     path: join(DB_ROOT, 'industry-trend.json'),
     default: (): { name: 'industry-trend', rows: Array<IndustryTrendForDay> } => ({ name: 'industry-trend', rows: [] })
+  },
+  DB_TOPIC_TREND: {
+    path: join(DB_ROOT, 'topic-trend.json'),
+    default: (): { name: 'topic-trend', rows: Array<TopicTrendForDay> } => ({ name: 'topic-trend', rows: [] })
   }
 };
 
