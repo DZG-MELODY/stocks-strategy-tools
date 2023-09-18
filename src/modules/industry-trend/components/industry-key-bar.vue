@@ -2,7 +2,7 @@
 import { BarY, barY, type PlotOptions } from '@observablehq/plot';
 import { onMounted, reactive, computed, watch } from 'vue';
 import BasePlot from '../../../components/charts/BasePlot.vue';
-import { IndustryLimitStockItem } from 'electron/data/data-storage/low-db/industry-trend';
+import { IndustryLimitStockItem } from 'electron/data';
 
 const props = withDefaults(defineProps<{
   stocks: Array<IndustryLimitStockItem>,
@@ -20,9 +20,14 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // subtitle: 'data sub title',
     // caption: 'data caption',
     margin: 60,
+    x:{
+      paddingInner:0.5
+    },
     y: {
       grid: true,
-      label: 'count'
+      label: 'count',
+      domain: [0, 15],
+      interval: 1
     },
     color: {
       legend: true

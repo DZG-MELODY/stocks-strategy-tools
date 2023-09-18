@@ -2,7 +2,7 @@
 import { Line, lineY, type PlotOptions } from '@observablehq/plot';
 import { onMounted, reactive, computed, watch } from 'vue';
 import BasePlot from '../../../components/charts/BasePlot.vue';
-import { IndustryTrendItem } from 'electron/data/data-storage/low-db/industry-trend';
+import { IndustryTrendItem } from 'electron/data';
 
 const props = withDefaults(defineProps<{
   trends: Array<IndustryTrendItem>,

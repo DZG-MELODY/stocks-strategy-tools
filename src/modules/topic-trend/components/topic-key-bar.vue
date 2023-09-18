@@ -20,9 +20,14 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // subtitle: 'data sub title',
     // caption: 'data caption',
     margin: 60,
+    x: {
+      paddingInner: 0.5
+    },
     y: {
       grid: true,
-      label: 'count'
+      label: 'count',
+      domain: [0, 15],
+      interval: 1
     },
     color: {
       legend: true

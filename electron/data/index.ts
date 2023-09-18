@@ -147,11 +147,13 @@ export type DataFetchHandleFn = (
   ...args: DataFetchParamsMaps[typeof method]
 ) => DataFetchReturnMaps[typeof method]
 
-
+let HasInit = false;
 export async function DataInit(type = 'low-db') {
+  if (HasInit) return;
   if (type === 'low-db') {
     const { init } = await import('./data-storage/low-db/init');
     await init();
   }
   ipcMain.handle('data-fetch', (event, method, ...args): DataFetchHandleFn => DataFetchMaps[method](...args));
+  HasInit = true;
 }
