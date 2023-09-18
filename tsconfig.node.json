@@ -5,15 +5,15 @@
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./"
-    // "paths": {
-    //   "@client": [
-    //     "src/*"
-    //   ],
-    //   "@electron": [
-    //     "electron/*"
-    //   ]
-    // }
+    "baseUrl": "./",
+    "paths": {
+      "src": [
+        "src/*"
+      ],
+      "electron": [
+        "electron/*"
+      ]
+    }
   },
   "include": [
     "vite.config.ts",

@@ -36,7 +36,8 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     y: {
       grid: true,
       label: 'count',
-      interval: 1
+      interval: 1,
+      domain: [0, 20]
     },
     color: {
       legend: true

@@ -2,7 +2,7 @@ import { LimitForStock } from './limit-history';
 import { getTable } from './utils';
 
 
-export type LimitForStockWithTopics = LimitForStock & { topics: Array<string> }
+export type LimitForStockWithTopics = LimitForStock & { tdx_topics: Array<string>, ths_topics: Array<string> }
 
 export type LimitForTopic = {
   _tag: 'LimitForTopic',
@@ -23,10 +23,11 @@ export type TopicTrendForDay = {
 }
 
 
-const calcTopicTrendForDay = (items: Array<LimitForStockWithTopics>): Array<LimitForTopic> => {
+const calcTopicTrendForDay = (items: Array<LimitForStockWithTopics>, type: 'tdx' | 'ths' = 'tdx'): Array<LimitForTopic> => {
   const topicSet = new Map<string, LimitForTopic>();
   items.forEach((v) => {
-    v.topics.forEach(topic => {
+    const topics = type === 'tdx' ? v.tdx_topics : v.ths_topics;
+    topics.forEach(topic => {
       if (!topicSet.has(topic)) topicSet.set(topic, { _tag: 'LimitForTopic', topic: topic, limit_count: 0, limit_stocks: [] });
       const item = topicSet.get(topic);
       item.limit_count += 1;

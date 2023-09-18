@@ -18,7 +18,7 @@ const dateDisabledFn = (date: number) => {
   return dateObj.getDay() === 0 || dateObj.getDay() === 6;
 };
 
-const onClickUpdate = async () => {
+const onClickUpdateForIndustry = async () => {
   const [success, result] = await window.dataFetcher.fetch('updateLimitForDay', { day: selectDayTime.value });
   if (success === true && result._tag === 'LimitForDay') {
     message.success(`${result.date} 更新完毕`);
@@ -29,6 +29,18 @@ const onClickUpdate = async () => {
   }
 };
 
+const onClickUpdateForTopic = async () => {
+  const [success, result] = await window.dataFetcher.fetch('updateTopicForDay', { day: selectDayTime.value });
+  if (success === true && result._tag === "LimitForDay") {
+    message.success(`${result.date} 更新完毕`);
+    console.log(result.date, result.items);
+  } else {
+    message.error('数据更新失败');
+    console.log(result);
+  }
+};
+
+
 </script>
 
 <template>
@@ -36,7 +48,8 @@ const onClickUpdate = async () => {
     <template #header>
       <n-space class="h-full w-full mx-3" justify="end" align="center">
         <span>选择时间：{{ selectDayTime }}</span>
-        <n-button size="small" @click="onClickUpdate">拉取数据</n-button>
+        <n-button size="small" @click="onClickUpdateForTopic">更新题材涨停数据</n-button>
+        <n-button size="small" @click="onClickUpdateForIndustry">拉取行业涨停数据</n-button>
       </n-space>
     </template>
     <n-calendar

@@ -14,9 +14,14 @@ const router = createRouter({
       component: () => import('./modules/home/index.vue')
     },
     {
-      name: 'strategy',
-      path: '/strategy',
-      component: () => import('./modules/strategy/index.vue'),
+      name: 'industry-trend',
+      path: '/industry-trend',
+      component: () => import('./modules/industry-trend/index.vue'),
+    },
+    {
+      name: 'topic-trend',
+      path: '/topic-trend',
+      component: () => import('./modules/topic-trend/index.vue'),
     },
     {
       name: 'data-manage',

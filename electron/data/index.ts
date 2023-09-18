@@ -1,9 +1,25 @@
 import { IpcMainInvokeEvent, ipcMain } from 'electron';
-import { HTTPResponseError } from '../utils/request';
-import { fetchLimitHistoryForDay, covertStockItem } from './data-fetch/df-share';
-import { getLimitHistoryForDay, setLimitHistoryForDay, type LimitForDay } from './data-storage/low-db';
-import { init } from './data-storage/low-db/init';
-import { IndustryTrend, calcIndustryTrendForTimeline, getIndustryTrendForDay, getIndustryTrendForRange, setIndustryTrendForDay, getLimitStocksForIndustry, type IndustryLimitStocks } from './data-storage/low-db/industry-trend';
+import { fetchLimitHistoryForDay } from './data-fetch/df-share';
+import { fetchLimitHistoryForTopic } from './data-fetch/local-share/getLimitForTopic';
+import {
+  IndustryTrend,
+  calcIndustryTrendForTimeline,
+  getIndustryTrendForDay,
+  getIndustryTrendForRange,
+  setIndustryTrendForDay,
+  getLimitStocksForIndustry,
+  getLimitHistoryForDay,
+  setLimitHistoryForDay,
+  setTopicTrendForDay,
+  TopicTrend,
+  getTopicTrendForRange,
+  TopicLimitStocks,
+  calcTopicTrendForTimeline,
+  getLimitStocksForTopic,
+  type LimitForDay,
+  type IndustryLimitStocks
+} from './data-storage/low-db';
+
 export type * from './data-storage/low-db';
 
 
@@ -52,10 +68,9 @@ export async function updateLimitForDay(query: { day: string }): Promise<DataRes
       return [true, limitRows];
     }
     // 请求数据
-    const res = await fetchLimitHistoryForDay(day);
-    if (res instanceof HTTPResponseError) return wrapResult<LimitForDay>({ success: false, result: res.message });
-    if (res.data === null) return [false, '当日无数据'];
-    const limitItems = (res.data?.pool || []).map(v => covertStockItem(v));
+    const limitItems = await fetchLimitHistoryForDay(day);
+    if (limitItems instanceof Error) return wrapResult<LimitForDay>({ success: false, result: limitItems.message });
+
     // 更新表
     await setLimitHistoryForDay(day, limitItems);
     await setIndustryTrendForDay(day, limitItems);
@@ -66,11 +81,48 @@ export async function updateLimitForDay(query: { day: string }): Promise<DataRes
 }
 
 
+export async function getTopicTrend(query: { start: string, end: string }): Promise<DataResult<TopicTrend>> {
+  const { start, end } = query;
+  const rows = await getTopicTrendForRange(start, end);
+  if (rows === false) return [false, '未生成数据'];
+  const trends = calcTopicTrendForTimeline(rows);
+  return wrapResult<TopicTrend>({ success: true, result: trends });
+}
+
+
+
+export async function getTopicLimitStocks(query: { industry: string, start: string, end: string }): Promise<DataResult<TopicLimitStocks>> {
+  const { industry, start, end } = query;
+  const ret = await getLimitStocksForTopic(industry, start, end);
+  if (ret === false) return [false, '未生成数据'];
+  return wrapResult<TopicLimitStocks>({ success: true, result: ret });
+}
+
+
+// 更新指定日期的题材数据
+export async function updateTopicForDay(query: { day: string }): Promise<DataResult<LimitForDay>> {
+  try {
+    const limitRows = await fetchLimitHistoryForTopic();
+    if (limitRows instanceof Error) return [false, limitRows.message];
+    const { day } = query;
+    // 更新表
+    await setTopicTrendForDay(day, limitRows);
+    return wrapResult<LimitForDay>({ success: true, result: { _tag: 'LimitForDay', date: day, items: limitRows } });
+
+  } catch (error) {
+    return [false, error.message || '未知错误'];
+  }
+}
+
+
 const DataFetchMaps = {
-  updateLimitForDay: updateLimitForDay,
   limitHistory: getLimitHistory,
-  getIndustryTrend: getIndustryTrend,
-  getIndustryLimitStocks: getIndustryLimitStocks
+  updateLimitForDay,
+  getIndustryTrend,
+  getIndustryLimitStocks,
+  updateTopicForDay,
+  getTopicTrend,
+  getTopicLimitStocks
 };
 
 export type DataFetchMaps = typeof DataFetchMaps
@@ -98,6 +150,7 @@ export type DataFetchHandleFn = (
 
 export async function DataInit(type = 'low-db') {
   if (type === 'low-db') {
+    const { init } = await import('./data-storage/low-db/init');
     await init();
   }
   ipcMain.handle('data-fetch', (event, method, ...args): DataFetchHandleFn => DataFetchMaps[method](...args));

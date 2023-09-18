@@ -32,18 +32,8 @@ type LimitListDayRes = {
   }
 }
 
-export const fetchLimitHistoryForDay = (day: string) => httpGet<LimitListDayReq, LimitListDayRes>('http://push2ex.eastmoney.com/getTopicZTPool',
-  {
-    ut: UT,
-    dpt: DPT,
-    Pageindex: 0,
-    pagesize: 1000,
-    sort: 'fbt:asc',
-    date: day,
-  }
-);
 
-export const covertStockItem = (item: StockItem): LimitForStock => ({
+const covertStockItem = (item: StockItem): LimitForStock => ({
   _tag: 'LimitForStock',
   code: item.c,
   name: item.n,
@@ -53,3 +43,18 @@ export const covertStockItem = (item: StockItem): LimitForStock => ({
   limit_times: item.lbc,
   industry: item.hybk
 });
+
+export const fetchLimitHistoryForDay = async (day: string) => {
+  const res = await httpGet<LimitListDayReq, LimitListDayRes>('http://push2ex.eastmoney.com/getTopicZTPool',
+    {
+      ut: UT,
+      dpt: DPT,
+      Pageindex: 0,
+      pagesize: 1000,
+      sort: 'fbt:asc',
+      date: day,
+    });
+  if (res instanceof Error) return new Error(res.message);
+  if (res.data === null) return new Error('当日无数据');
+  return (res.data?.pool || []).map(v => covertStockItem(v));
+};
