@@ -30,9 +30,9 @@ const calcIndustryTrendForDay = (items: Array<LimitForStock>): Array<LimitForInd
   return Array.from(industrySet.values());
 };
 
-export const setIndustryTrendForDay = async (date: string, items: Array<LimitForStock>) => {
+export const updateIndustryTrendForDay = async (date: string, items: Array<LimitForStock>) => {
   const table = await getTable('DB_INDUSTRY_TREND');
-  if (table.data.name !== 'industry-trend') return;
+  if (table.data.name !== 'industry-trend') return new Error('数据库表不匹配');
   const row = table.data.rows.find(v => v.date === date);
   if (row) {
     row.items = calcIndustryTrendForDay(items);
@@ -43,19 +43,25 @@ export const setIndustryTrendForDay = async (date: string, items: Array<LimitFor
       items: calcIndustryTrendForDay(items)
     });
   }
-  await table.write();
+  try {
+    await table.write();
+    return true;
+  } catch (error) {
+    return new Error('表写入错误');
+  }
 };
 
 export const getIndustryTrendForDay = async (day: string) => {
   const table = await getTable('DB_INDUSTRY_TREND');
-  if (table.data.name !== 'industry-trend') return false;
+  if (table.data.name !== 'industry-trend') return new Error('数据库表不匹配');
   const row = table.data.rows.find(v => v.date === day);
-  return row ?? false;
+  if (!row) return new Error('未找指定日期的数据');
+  return row;
 };
 
 export const getIndustryTrendForRange = async (start: string, end: string) => {
   const table = await getTable('DB_INDUSTRY_TREND');
-  if (table.data.name !== 'industry-trend') return false;
+  if (table.data.name !== 'industry-trend') return new Error('数据库表不匹配');
   const rows = table.data.rows.filter(v => v.date >= start && v.date <= end).map(v => ({ ...v })).sort((v1, v2) => v1.date > v2.date ? 1 : -1);
   return rows;
 };
@@ -107,9 +113,9 @@ export const calcIndustryTrendForTimeline = (limitForRange: Array<IndustryTrendF
 export type IndustryLimitStockItem = LimitForStock & { date: string }
 export type IndustryLimitStocks = { _tag: 'IndustryLimitStocks', items: Array<IndustryLimitStockItem>, days: Array<string> }
 
-export const getLimitStocksForIndustry = async (industry: string, start: string, end: string): Promise<IndustryLimitStocks | false> => {
+export const getLimitStocksForIndustry = async (industry: string, start: string, end: string): Promise<IndustryLimitStocks | Error> => {
   const rows = await getIndustryTrendForRange(start, end);
-  if (rows === false) return false;
+  if (rows instanceof Error) return rows;
   const stocks: Array<IndustryLimitStockItem> = [];
   const days: Array<string> = [];
   rows.forEach(r => {

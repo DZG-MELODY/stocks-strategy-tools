@@ -35,27 +35,11 @@ const calcTopicTrendForDay = (items: Array<LimitForStock>, type: 'tdx' | 'ths' =
   return Array.from(topicSet.values());
 };
 
-const updateTopicForLimitStocksByDay = async (date: string, items: Array<LimitForStock>, type: 'tdx' | 'ths' = 'tdx') => {
-  const table = await getTable('DB_LIMIT_HISTORY');
-  if (table.data.name !== 'limit-history') return new Error('数据库表不匹配');
-  const orgStocks = table.data.rows.find(r => r.date === date);
-  if (!orgStocks) return new Error('未找指定日期的数据');
-  orgStocks.items.forEach(s => {
-    const target = items.find(v => v.name === s.name);
-    if (type === 'tdx') {
-      if (Array.isArray(s.tdx_topics)) s.tdx_topics = [];
-      if (s.tdx_topics.length === 0) s.tdx_topics.push(...target.tdx_topics);
-    } else {
-      if (Array.isArray(s.ths_topics)) s.ths_topics = [];
-      if (s.ths_topics.length === 0) s.ths_topics.push(...target.ths_topics);
-    }
-  });
-};
 
 
-export const setTopicTrendForDay = async (date: string, items: Array<LimitForStock>) => {
+export const updateTopicTrendForDay = async (date: string, items: Array<LimitForStock>) => {
   const table = await getTable('DB_TOPIC_TREND');
-  if (table.data.name !== 'topic-trend') return false;
+  if (table.data.name !== 'topic-trend') return new Error('数据库表不匹配');
   const row = table.data.rows.find(v => v.date === date);
   if (row) {
     row.items = calcTopicTrendForDay(items);
@@ -66,12 +50,17 @@ export const setTopicTrendForDay = async (date: string, items: Array<LimitForSto
       items: calcTopicTrendForDay(items)
     });
   }
-  await table.write();
+  try {
+    await table.write();
+    return true;
+  } catch (error) {
+    return new Error('表写入错误');
+  }
 };
 
 export const getTopicTrendForRange = async (start: string, end: string) => {
   const table = await getTable('DB_TOPIC_TREND');
-  if (table.data.name !== 'topic-trend') return false;
+  if (table.data.name !== 'topic-trend') return new Error('数据库表不匹配');
   const rows = table.data.rows.filter(v => v.date >= start && v.date <= end).map(v => ({ ...v })).sort((v1, v2) => v1.date > v2.date ? 1 : -1);
   return rows;
 };
@@ -121,9 +110,9 @@ export const calcTopicTrendForTimeline = (limitForRange: Array<TopicTrendForDay>
 export type TopicLimitStockItem = LimitForStock & { date: string }
 export type TopicLimitStocks = { _tag: 'TopicLimitStocks', items: Array<TopicLimitStockItem>, days: Array<string> }
 
-export const getLimitStocksForTopic = async (topic: string, start: string, end: string): Promise<TopicLimitStocks | false> => {
+export const getLimitStocksForTopic = async (topic: string, start: string, end: string): Promise<TopicLimitStocks | Error> => {
   const rows = await getTopicTrendForRange(start, end);
-  if (rows === false) return false;
+  if (rows instanceof Error) return rows;
   const stocks: Array<TopicLimitStockItem> = [];
   const days: Array<string> = [];
   rows.forEach(r => {
