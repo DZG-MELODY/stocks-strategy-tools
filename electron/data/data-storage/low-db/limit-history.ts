@@ -16,6 +16,10 @@ export type LimitForStock = {
   limit_times: number,
   // 行业板块
   industry: string,
+  // 通达信题材
+  tdx_topics: Array<string>,
+  // 同花顺题材
+  ths_topics: Array<string>
 }
 
 export type LimitForDay = {

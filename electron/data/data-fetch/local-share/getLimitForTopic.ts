@@ -1,6 +1,6 @@
 // 通过csv文件读取
 import { selectFileByDialog } from '../../../utils/files';
-import { LimitForStockWithTopics } from 'electron/data';
+import { LimitForStock } from 'electron/data';
 import { fetchFromCSV } from '../../../utils/csv';
 
 type StockItem = {
@@ -13,7 +13,7 @@ type StockItem = {
   '涨停原因': string
 }
 
-const covertStockItem = (item: StockItem): LimitForStockWithTopics => ({
+const covertStockItem = (item: StockItem): LimitForStock => ({
   _tag: 'LimitForStock',
   code: item['股票代码'],
   name: item['股票名称'],

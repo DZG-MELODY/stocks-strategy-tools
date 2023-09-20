@@ -2,8 +2,6 @@ import { LimitForStock } from './limit-history';
 import { getTable } from './utils';
 
 
-export type LimitForStockWithTopics = LimitForStock & { tdx_topics: Array<string>, ths_topics: Array<string> }
-
 export type LimitForTopic = {
   _tag: 'LimitForTopic',
   // 行业板块
@@ -11,7 +9,7 @@ export type LimitForTopic = {
   // 涨停个数
   limit_count: number,
   // 涨停股
-  limit_stocks: Array<LimitForStockWithTopics>
+  limit_stocks: Array<LimitForStock>
 }
 
 export type TopicTrendForDay = {
@@ -23,7 +21,7 @@ export type TopicTrendForDay = {
 }
 
 
-const calcTopicTrendForDay = (items: Array<LimitForStockWithTopics>, type: 'tdx' | 'ths' = 'tdx'): Array<LimitForTopic> => {
+const calcTopicTrendForDay = (items: Array<LimitForStock>, type: 'tdx' | 'ths' = 'tdx'): Array<LimitForTopic> => {
   const topicSet = new Map<string, LimitForTopic>();
   items.forEach((v) => {
     const topics = type === 'tdx' ? v.tdx_topics : v.ths_topics;
@@ -37,8 +35,25 @@ const calcTopicTrendForDay = (items: Array<LimitForStockWithTopics>, type: 'tdx'
   return Array.from(topicSet.values());
 };
 
+const updateTopicForLimitStocksByDay = async (date: string, items: Array<LimitForStock>, type: 'tdx' | 'ths' = 'tdx') => {
+  const table = await getTable('DB_LIMIT_HISTORY');
+  if (table.data.name !== 'limit-history') return new Error('数据库表不匹配');
+  const orgStocks = table.data.rows.find(r => r.date === date);
+  if (!orgStocks) return new Error('未找指定日期的数据');
+  orgStocks.items.forEach(s => {
+    const target = items.find(v => v.name === s.name);
+    if (type === 'tdx') {
+      if (Array.isArray(s.tdx_topics)) s.tdx_topics = [];
+      if (s.tdx_topics.length === 0) s.tdx_topics.push(...target.tdx_topics);
+    } else {
+      if (Array.isArray(s.ths_topics)) s.ths_topics = [];
+      if (s.ths_topics.length === 0) s.ths_topics.push(...target.ths_topics);
+    }
+  });
+};
 
-export const setTopicTrendForDay = async (date: string, items: Array<LimitForStockWithTopics>) => {
+
+export const setTopicTrendForDay = async (date: string, items: Array<LimitForStock>) => {
   const table = await getTable('DB_TOPIC_TREND');
   if (table.data.name !== 'topic-trend') return false;
   const row = table.data.rows.find(v => v.date === date);
@@ -103,7 +118,7 @@ export const calcTopicTrendForTimeline = (limitForRange: Array<TopicTrendForDay>
 };
 
 
-export type TopicLimitStockItem = LimitForStockWithTopics & { date: string }
+export type TopicLimitStockItem = LimitForStock & { date: string }
 export type TopicLimitStocks = { _tag: 'TopicLimitStocks', items: Array<TopicLimitStockItem>, days: Array<string> }
 
 export const getLimitStocksForTopic = async (topic: string, start: string, end: string): Promise<TopicLimitStocks | false> => {
