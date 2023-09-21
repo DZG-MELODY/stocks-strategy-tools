@@ -12,7 +12,10 @@
           "turnover_ratio": 5.800543308258057,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "600892",
@@ -21,7 +24,10 @@
           "turnover_ratio": 2.03352427482605,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "游戏"
+          "industry": "游戏",
+          "tdx_topics": [
+            "游戏"
+          ]
         },
         {
           "code": "000536",
@@ -30,7 +36,10 @@
           "turnover_ratio": 20.96306037902832,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603389",
@@ -39,7 +48,10 @@
           "turnover_ratio": 3.2327897548675537,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "301011",
@@ -48,7 +60,10 @@
           "turnover_ratio": 10.462937355041504,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "游戏"
+          ]
         },
         {
           "code": "600850",
@@ -57,7 +72,10 @@
           "turnover_ratio": 3.8799118995666504,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "信创"
+          ]
         },
         {
           "code": "603221",
@@ -66,7 +84,10 @@
           "turnover_ratio": 2.659250497817993,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "300588",
@@ -75,7 +96,10 @@
           "turnover_ratio": 16.35550880432129,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "软件开发"
+          "industry": "软件开发",
+          "tdx_topics": [
+            "信创"
+          ]
         },
         {
           "code": "600895",
@@ -84,7 +108,10 @@
           "turnover_ratio": 8.03476333618164,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "603256",
@@ -93,7 +120,10 @@
           "turnover_ratio": 6.031067848205566,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "玻璃玻纤"
+          "industry": "玻璃玻纤",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300256",
@@ -102,7 +132,10 @@
           "turnover_ratio": 14.063114166259766,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "杭州亚运会"
+          ]
         },
         {
           "code": "001296",
@@ -111,7 +144,10 @@
           "turnover_ratio": 31.866973876953125,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "非金属材"
+          "industry": "非金属材",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "002767",
@@ -120,7 +156,10 @@
           "turnover_ratio": 7.8013529777526855,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "002654",
@@ -129,7 +168,10 @@
           "turnover_ratio": 8.94336986541748,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "002528",
@@ -138,7 +180,10 @@
           "turnover_ratio": 12.160300254821777,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "软件开发"
+          "industry": "软件开发",
+          "tdx_topics": [
+            "信创"
+          ]
         },
         {
           "code": "301270",
@@ -147,7 +192,10 @@
           "turnover_ratio": 50.73044967651367,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "600814",
@@ -156,7 +204,10 @@
           "turnover_ratio": 10.361075401306152,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "杭州亚运会"
+          ]
         }
       ]
     },
@@ -171,7 +222,10 @@
           "turnover_ratio": 5.571994304656982,
           "has_fail": false,
           "limit_times": 6,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603226",
@@ -180,7 +234,10 @@
           "turnover_ratio": 5.618375301361084,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "000536",
@@ -189,7 +246,10 @@
           "turnover_ratio": 7.5516357421875,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "002725",
@@ -198,7 +258,10 @@
           "turnover_ratio": 11.061442375183105,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "600360",
@@ -207,7 +270,10 @@
           "turnover_ratio": 3.5676615238189697,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "603190",
@@ -216,7 +282,10 @@
           "turnover_ratio": 18.402870178222656,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "汽车零部件"
+          ]
         },
         {
           "code": "603679",
@@ -225,7 +294,10 @@
           "turnover_ratio": 6.701511859893799,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603326",
@@ -234,7 +306,10 @@
           "turnover_ratio": 14.690983772277832,
           "has_fail": true,
           "limit_times": 8,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002547",
@@ -243,7 +318,10 @@
           "turnover_ratio": 3.898831605911255,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300293",
@@ -252,7 +330,10 @@
           "turnover_ratio": 11.04360580444336,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "603161",
@@ -261,7 +342,11 @@
           "turnover_ratio": 8.473325729370117,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "公告",
+            "汽车零部件"
+          ]
         },
         {
           "code": "603101",
@@ -270,7 +355,10 @@
           "turnover_ratio": 5.837897300720215,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "603324",
@@ -279,7 +367,10 @@
           "turnover_ratio": 14.413252830505371,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "环保行业"
+          "industry": "环保行业",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "300537",
@@ -288,7 +379,10 @@
           "turnover_ratio": 32.87818145751953,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "300637",
@@ -297,7 +391,10 @@
           "turnover_ratio": 15.886754989624023,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "600189",
@@ -306,7 +403,10 @@
           "turnover_ratio": 5.387898921966553,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "600895",
@@ -315,7 +415,10 @@
           "turnover_ratio": 4.6539626121521,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "300807",
@@ -324,7 +427,10 @@
           "turnover_ratio": 29.851421356201172,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300563",
@@ -333,7 +439,11 @@
           "turnover_ratio": 32.63008499145508,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "华为产业链",
+            "卫星互联网"
+          ]
         },
         {
           "code": "605588",
@@ -342,7 +452,10 @@
           "turnover_ratio": 36.730995178222656,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "603629",
@@ -351,7 +464,10 @@
           "turnover_ratio": 9.95235538482666,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "000058",
@@ -360,7 +476,10 @@
           "turnover_ratio": 3.2495219707489014,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "300045",
@@ -369,7 +488,11 @@
           "turnover_ratio": 31.771936416625977,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "卫星互联网",
+            "公告"
+          ]
         },
         {
           "code": "603163",
@@ -378,7 +501,10 @@
           "turnover_ratio": 20.385499954223633,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程建设"
+          "industry": "工程建设",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "688418",
@@ -387,7 +513,10 @@
           "turnover_ratio": 19.35045051574707,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "002338",
@@ -396,7 +525,10 @@
           "turnover_ratio": 6.32867956161499,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "605365",
@@ -405,7 +537,10 @@
           "turnover_ratio": 16.34086036682129,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "000797",
@@ -414,7 +549,10 @@
           "turnover_ratio": 7.145651817321777,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "601133",
@@ -423,7 +561,10 @@
           "turnover_ratio": 19.225170135498047,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程建设"
+          "industry": "工程建设",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "603125",
@@ -432,7 +573,10 @@
           "turnover_ratio": 35.13472366333008,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制品"
+          "industry": "化学制品",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002222",
@@ -441,7 +585,10 @@
           "turnover_ratio": 12.05157470703125,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "688206",
@@ -450,7 +597,10 @@
           "turnover_ratio": 9.5569429397583,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "软件开发"
+          "industry": "软件开发",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "003031",
@@ -459,7 +609,10 @@
           "turnover_ratio": 4.559329986572266,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "300576",
@@ -468,7 +621,10 @@
           "turnover_ratio": 37.363651275634766,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "301348",
@@ -477,7 +633,11 @@
           "turnover_ratio": 71.6106185913086,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片",
+            "华为产业链"
+          ]
         },
         {
           "code": "603607",
@@ -486,7 +646,10 @@
           "turnover_ratio": 6.4967570304870605,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "造纸印刷"
+          "industry": "造纸印刷",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "688502",
@@ -495,7 +658,10 @@
           "turnover_ratio": 16.46533203125,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         }
       ]
     },
@@ -510,7 +676,10 @@
           "turnover_ratio": 1.1284353733062744,
           "has_fail": false,
           "limit_times": 5,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "002861",
@@ -519,7 +688,10 @@
           "turnover_ratio": 3.6914706230163574,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603326",
@@ -528,7 +700,10 @@
           "turnover_ratio": 10.763557434082031,
           "has_fail": true,
           "limit_times": 7,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "600792",
@@ -537,7 +712,10 @@
           "turnover_ratio": 3.149273633956909,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "000536",
@@ -546,7 +724,10 @@
           "turnover_ratio": 12.299854278564453,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "002217",
@@ -555,7 +736,10 @@
           "turnover_ratio": 1.6925405263900757,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300538",
@@ -564,7 +748,10 @@
           "turnover_ratio": 20.20496940612793,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "603551",
@@ -573,7 +760,10 @@
           "turnover_ratio": 5.020004749298096,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002725",
@@ -582,7 +772,10 @@
           "turnover_ratio": 9.853116989135742,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "600814",
@@ -591,7 +784,10 @@
           "turnover_ratio": 10.445920944213867,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "301348",
@@ -600,7 +796,11 @@
           "turnover_ratio": 42.770198822021484,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片",
+            "华为产业链"
+          ]
         },
         {
           "code": "001896",
@@ -609,7 +809,10 @@
           "turnover_ratio": 6.408613681793213,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电力行业"
+          "industry": "电力行业",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "code": "300776",
@@ -618,7 +821,10 @@
           "turnover_ratio": 6.014732360839844,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "code": "600732",
@@ -627,7 +833,10 @@
           "turnover_ratio": 2.880138635635376,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光伏设备"
+          "industry": "光伏设备",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "code": "300537",
@@ -636,7 +845,11 @@
           "turnover_ratio": 23.297101974487305,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光伏",
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002795",
@@ -645,7 +858,10 @@
           "turnover_ratio": 8.431830406188965,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "code": "002866",
@@ -654,7 +870,10 @@
           "turnover_ratio": 11.948223114013672,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "301021",
@@ -663,7 +882,10 @@
           "turnover_ratio": 24.839248657226562,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子元件"
+          "industry": "电子元件",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "code": "605069",
@@ -672,7 +894,10 @@
           "turnover_ratio": 41.379390716552734,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "环保行业"
+          "industry": "环保行业",
+          "tdx_topics": [
+            "其他"
+          ]
         }
       ]
     },
@@ -687,7 +912,10 @@
           "turnover_ratio": 6.783197402954102,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603326",
@@ -696,7 +924,10 @@
           "turnover_ratio": 0.9253155589103699,
           "has_fail": false,
           "limit_times": 6,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "600792",
@@ -705,7 +936,10 @@
           "turnover_ratio": 1.4705579280853271,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "603161",
@@ -714,7 +948,11 @@
           "turnover_ratio": 7.370194911956787,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "公告",
+            "汽车零部件"
+          ]
         },
         {
           "code": "002822",
@@ -723,7 +961,10 @@
           "turnover_ratio": 6.952335357666016,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "603216",
@@ -732,7 +973,10 @@
           "turnover_ratio": 15.42349910736084,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002285",
@@ -741,7 +985,10 @@
           "turnover_ratio": 1.6575071811676025,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产服"
+          "industry": "房地产服",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "300749",
@@ -750,7 +997,10 @@
           "turnover_ratio": 22.747365951538086,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "603378",
@@ -759,7 +1009,10 @@
           "turnover_ratio": 1.5029758214950562,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "603389",
@@ -768,7 +1021,10 @@
           "turnover_ratio": 3.7391228675842285,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "000863",
@@ -777,7 +1033,10 @@
           "turnover_ratio": 3.37412428855896,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "000609",
@@ -786,7 +1045,10 @@
           "turnover_ratio": 23.078941345214844,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002949",
@@ -795,7 +1057,10 @@
           "turnover_ratio": 4.206525802612305,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程咨询"
+          "industry": "工程咨询",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002207",
@@ -804,7 +1069,10 @@
           "turnover_ratio": 6.415866851806641,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "采掘行业"
+          "industry": "采掘行业",
+          "tdx_topics": [
+            "油服"
+          ]
         },
         {
           "code": "600725",
@@ -813,7 +1081,10 @@
           "turnover_ratio": 1.3490351438522339,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "002968",
@@ -822,7 +1093,10 @@
           "turnover_ratio": 5.551098346710205,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产服"
+          "industry": "房地产服",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "601188",
@@ -831,7 +1105,10 @@
           "turnover_ratio": 3.107679605484009,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "一带一路"
+          ]
         },
         {
           "code": "000766",
@@ -840,7 +1117,11 @@
           "turnover_ratio": 10.459671020507812,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "工业大麻",
+            "公告"
+          ]
         },
         {
           "code": "603612",
@@ -849,7 +1130,10 @@
           "turnover_ratio": 3.140505075454712,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "非金属材"
+          "industry": "非金属材",
+          "tdx_topics": [
+            "有色金属"
+          ]
         },
         {
           "code": "000560",
@@ -858,7 +1142,10 @@
           "turnover_ratio": 12.108316421508789,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "房地产服"
+          "industry": "房地产服",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "601121",
@@ -867,7 +1154,10 @@
           "turnover_ratio": 17.623016357421875,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "钢铁行业"
+          "industry": "钢铁行业",
+          "tdx_topics": [
+            "有色金属"
+          ]
         },
         {
           "code": "603919",
@@ -876,7 +1166,10 @@
           "turnover_ratio": 3.3238584995269775,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "酿酒行业"
+          "industry": "酿酒行业",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "600691",
@@ -885,7 +1178,10 @@
           "turnover_ratio": 2.3489112854003906,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化肥行业"
+          "industry": "化肥行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "603399",
@@ -894,7 +1190,10 @@
           "turnover_ratio": 3.0256121158599854,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "小金属"
+          "industry": "小金属",
+          "tdx_topics": [
+            "有色金属"
+          ]
         },
         {
           "code": "600984",
@@ -903,7 +1202,10 @@
           "turnover_ratio": 3.4100215435028076,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "工程机械"
+          "industry": "工程机械",
+          "tdx_topics": [
+            "大基建"
+          ]
         },
         {
           "code": "600603",
@@ -912,7 +1214,10 @@
           "turnover_ratio": 3.4581878185272217,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "一带一路"
+          ]
         },
         {
           "code": "002791",
@@ -921,7 +1226,10 @@
           "turnover_ratio": 3.068668842315674,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002235",
@@ -930,7 +1238,10 @@
           "turnover_ratio": 17.649049758911133,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "数据要素"
+          ]
         },
         {
           "code": "000506",
@@ -939,7 +1250,10 @@
           "turnover_ratio": 13.974632263183594,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "贵金属"
+          "industry": "贵金属",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "000830",
@@ -948,7 +1262,10 @@
           "turnover_ratio": 5.8020148277282715,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学原料"
+          "industry": "化学原料",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "000737",
@@ -957,7 +1274,10 @@
           "turnover_ratio": 3.2498538494110107,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "有色金属"
+          "industry": "有色金属",
+          "tdx_topics": [
+            "有色金属"
+          ]
         },
         {
           "code": "603330",
@@ -966,7 +1286,10 @@
           "turnover_ratio": 7.132371425628662,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "600753",
@@ -975,7 +1298,10 @@
           "turnover_ratio": 21.303497314453125,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "贸易行业"
+          "industry": "贸易行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603709",
@@ -984,7 +1310,10 @@
           "turnover_ratio": 3.8922290802001953,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "603221",
@@ -993,7 +1322,10 @@
           "turnover_ratio": 2.302158832550049,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002798",
@@ -1002,7 +1334,10 @@
           "turnover_ratio": 8.195551872253418,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "601127",
@@ -1011,7 +1346,10 @@
           "turnover_ratio": 4.940359592437744,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车整车"
+          "industry": "汽车整车",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300045",
@@ -1020,7 +1358,10 @@
           "turnover_ratio": 35.639183044433594,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "603767",
@@ -1029,7 +1370,10 @@
           "turnover_ratio": 16.990856170654297,
           "has_fail": false,
           "limit_times": 5,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "汽车零部件"
+          ]
         },
         {
           "code": "600186",
@@ -1038,7 +1382,10 @@
           "turnover_ratio": 15.071905136108398,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "002978",
@@ -1047,7 +1394,10 @@
           "turnover_ratio": 1.8118809461593628,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "钢铁行业"
+          "industry": "钢铁行业",
+          "tdx_topics": [
+            "钢铁"
+          ]
         },
         {
           "code": "002861",
@@ -1056,7 +1406,10 @@
           "turnover_ratio": 13.724329948425293,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "603170",
@@ -1065,7 +1418,10 @@
           "turnover_ratio": 6.881588459014893,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "000158",
@@ -1074,7 +1430,10 @@
           "turnover_ratio": 5.631903171539307,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "综合行业"
+          "industry": "综合行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "000536",
@@ -1083,7 +1442,10 @@
           "turnover_ratio": 5.719448089599609,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "002261",
@@ -1092,7 +1454,10 @@
           "turnover_ratio": 25.1807861328125,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "软件开发"
+          "industry": "软件开发",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "300212",
@@ -1101,7 +1466,10 @@
           "turnover_ratio": 12.991990089416504,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "数据要素"
+          ]
         },
         {
           "code": "603180",
@@ -1110,7 +1478,10 @@
           "turnover_ratio": 3.328284502029419,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         }
       ]
     },
@@ -1125,7 +1496,10 @@
           "turnover_ratio": 0.5407097935676575,
           "has_fail": false,
           "limit_times": 5,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "001368",
@@ -1134,7 +1508,10 @@
           "turnover_ratio": 11.983863830566406,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "杭州亚运会"
+          ]
         },
         {
           "code": "000609",
@@ -1143,7 +1520,10 @@
           "turnover_ratio": 31.825531005859375,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "600540",
@@ -1152,7 +1532,10 @@
           "turnover_ratio": 3.8961620330810547,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "农牧饲渔"
+          "industry": "农牧饲渔",
+          "tdx_topics": [
+            "新疆"
+          ]
         },
         {
           "code": "603216",
@@ -1161,7 +1544,10 @@
           "turnover_ratio": 6.8395466804504395,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002855",
@@ -1170,7 +1556,10 @@
           "turnover_ratio": 6.753551006317139,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "301320",
@@ -1179,7 +1568,10 @@
           "turnover_ratio": 23.94034194946289,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子元件"
+          "industry": "电子元件",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "002822",
@@ -1188,7 +1580,10 @@
           "turnover_ratio": 6.276976108551025,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "code": "600280",
@@ -1197,7 +1592,10 @@
           "turnover_ratio": 6.11553430557251,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "605188",
@@ -1206,7 +1604,10 @@
           "turnover_ratio": 1.5525901317596436,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "300106",
@@ -1215,7 +1616,11 @@
           "turnover_ratio": 15.366985321044922,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "新疆",
+            "大消费"
+          ]
         },
         {
           "code": "002336",
@@ -1224,7 +1629,10 @@
           "turnover_ratio": 4.640469074249268,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "000715",
@@ -1233,7 +1641,10 @@
           "turnover_ratio": 5.747744560241699,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "601086",
@@ -1242,7 +1653,10 @@
           "turnover_ratio": 8.215810775756836,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "code": "002095",
@@ -1251,7 +1665,10 @@
           "turnover_ratio": 10.361741065979004,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "002719",
@@ -1260,7 +1677,11 @@
           "turnover_ratio": 18.607149124145508,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费",
+            "新疆"
+          ]
         },
         {
           "code": "601015",
@@ -1269,7 +1690,10 @@
           "turnover_ratio": 3.2674264907836914,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "600792",
@@ -1278,7 +1702,10 @@
           "turnover_ratio": 2.1264772415161133,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "code": "000923",
@@ -1287,7 +1714,10 @@
           "turnover_ratio": 6.228864669799805,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "钢铁行业"
+          "industry": "钢铁行业",
+          "tdx_topics": [
+            "大基建"
+          ]
         },
         {
           "code": "300649",
@@ -1296,7 +1726,11 @@
           "turnover_ratio": 13.14893913269043,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程咨询"
+          "industry": "工程咨询",
+          "tdx_topics": [
+            "大基建",
+            "杭州亚运会"
+          ]
         },
         {
           "code": "600814",
@@ -1305,7 +1739,11 @@
           "turnover_ratio": 2.1784257888793945,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费",
+            "杭州亚运会"
+          ]
         },
         {
           "code": "603767",
@@ -1314,7 +1752,10 @@
           "turnover_ratio": 21.19896697998047,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "汽车零部件"
+          ]
         },
         {
           "code": "603080",
@@ -1323,7 +1764,10 @@
           "turnover_ratio": 9.063919067382812,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "燃气"
+          "industry": "燃气",
+          "tdx_topics": [
+            "新疆"
+          ]
         },
         {
           "code": "300050",
@@ -1332,7 +1776,10 @@
           "turnover_ratio": 11.591599464416504,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信服务"
+          "industry": "通信服务",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "601116",
@@ -1341,7 +1788,11 @@
           "turnover_ratio": 6.412187576293945,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费",
+            "杭州亚运会"
+          ]
         }
       ]
     },
@@ -4158,7 +4609,10 @@
           "turnover_ratio": 1.631523609161377,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "001268",
@@ -4167,7 +4621,10 @@
           "turnover_ratio": 7.55517053604126,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "605588",
@@ -4176,7 +4633,10 @@
           "turnover_ratio": 2.7619571685791016,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "code": "002455",
@@ -4185,7 +4645,10 @@
           "turnover_ratio": 2.792151927947998,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制品"
+          "industry": "化学制品",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002676",
@@ -4194,7 +4657,10 @@
           "turnover_ratio": 2.9736008644104004,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "002963",
@@ -4203,7 +4669,10 @@
           "turnover_ratio": 5.292619705200195,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "605365",
@@ -4212,7 +4681,10 @@
           "turnover_ratio": 33.550201416015625,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "600895",
@@ -4221,7 +4693,10 @@
           "turnover_ratio": 3.944157361984253,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "001296",
@@ -4230,7 +4705,10 @@
           "turnover_ratio": 52.814537048339844,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "非金属材"
+          "industry": "非金属材",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "301036",
@@ -4239,7 +4717,10 @@
           "turnover_ratio": 29.34983253479004,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制品"
+          "industry": "化学制品",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002848",
@@ -4248,7 +4729,10 @@
           "turnover_ratio": 7.496628761291504,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "000536",
@@ -4257,7 +4741,10 @@
           "turnover_ratio": 11.93714427947998,
           "has_fail": true,
           "limit_times": 5,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "600202",
@@ -4266,7 +4753,10 @@
           "turnover_ratio": 12.052151679992676,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电源设备"
+          "industry": "电源设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002418",
@@ -4275,7 +4765,10 @@
           "turnover_ratio": 3.0889370441436768,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "002889",
@@ -4284,7 +4777,10 @@
           "turnover_ratio": 6.6941142082214355,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "物流行业"
+          "industry": "物流行业",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "300990",
@@ -4293,7 +4789,10 @@
           "turnover_ratio": 23.8572940826416,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002338",
@@ -4302,7 +4801,10 @@
           "turnover_ratio": 9.099867820739746,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "002855",
@@ -4311,7 +4813,10 @@
           "turnover_ratio": 15.99777603149414,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "code": "002708",
@@ -4320,7 +4825,10 @@
           "turnover_ratio": 13.126090049743652,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "code": "300293",
@@ -4329,7 +4837,10 @@
           "turnover_ratio": 24.279552459716797,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "code": "300904",
@@ -4338,7 +4849,10 @@
           "turnover_ratio": 26.63233184814453,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "code": "003015",
@@ -4347,7 +4861,10 @@
           "turnover_ratio": 20.678726196289062,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "code": "002703",
@@ -4356,7 +4873,10 @@
           "turnover_ratio": 12.625953674316406,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "code": "002642",
@@ -4365,7 +4885,10 @@
           "turnover_ratio": 12.599987030029297,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "code": "600114",
@@ -4374,7 +4897,10 @@
           "turnover_ratio": 10.414063453674316,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "code": "300936",
@@ -4383,7 +4909,10 @@
           "turnover_ratio": 46.48759841918945,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电子元件"
+          "industry": "电子元件",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "002465",
@@ -4392,7 +4921,10 @@
           "turnover_ratio": 4.954310417175293,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "000851",
@@ -4401,7 +4933,10 @@
           "turnover_ratio": 8.93016529083252,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "code": "688259",
@@ -4410,7 +4945,10 @@
           "turnover_ratio": 21.346675872802734,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "code": "002341",
@@ -4419,7 +4957,10 @@
           "turnover_ratio": 2.9648985862731934,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "code": "000767",
@@ -4428,7 +4969,10 @@
           "turnover_ratio": 4.187415599822998,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电力行业"
+          "industry": "电力行业",
+          "tdx_topics": [
+            "火电"
+          ]
         },
         {
           "code": "601698",
@@ -4437,7 +4981,10 @@
           "turnover_ratio": 2.615419864654541,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信服务"
+          "industry": "通信服务",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "300045",
@@ -4446,7 +4993,11 @@
           "turnover_ratio": 40.04030227661133,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "卫星互联网",
+            "公告"
+          ]
         },
         {
           "code": "688592",
@@ -4455,7 +5006,10 @@
           "turnover_ratio": 36.270084381103516,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "000801",
@@ -4464,7 +5018,10 @@
           "turnover_ratio": 7.950638294219971,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "code": "600533",
@@ -4473,7 +5030,10 @@
           "turnover_ratio": 8.6873140335083,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "code": "688418",
@@ -4482,7 +5042,10 @@
           "turnover_ratio": 37.33742141723633,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         }
       ]
     },
@@ -4498,7 +5061,10 @@
           "turnover_ratio": 6.154164791107178,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4508,7 +5074,10 @@
           "turnover_ratio": 2.2298014163970947,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4518,7 +5087,10 @@
           "turnover_ratio": 2.659573554992676,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4528,7 +5100,10 @@
           "turnover_ratio": 2.219522714614868,
           "has_fail": false,
           "limit_times": 4,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4538,7 +5113,11 @@
           "turnover_ratio": 6.778847694396973,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "农牧饲渔"
+          "industry": "农牧饲渔",
+          "tdx_topics": [
+            "大农业",
+            "公告"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4548,7 +5127,10 @@
           "turnover_ratio": 14.717288970947266,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4558,7 +5140,10 @@
           "turnover_ratio": 5.83604097366333,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "塑料制品"
+          "industry": "塑料制品",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4568,7 +5153,10 @@
           "turnover_ratio": 7.389010429382324,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "元宇宙"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4578,7 +5166,10 @@
           "turnover_ratio": 16.913002014160156,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "采掘行业"
+          "industry": "采掘行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4588,7 +5179,10 @@
           "turnover_ratio": 9.706864356994629,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4598,7 +5192,10 @@
           "turnover_ratio": 21.497316360473633,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4608,7 +5205,10 @@
           "turnover_ratio": 26.026323318481445,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "光通信"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4618,7 +5218,10 @@
           "turnover_ratio": 1.5075469017028809,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4628,7 +5231,10 @@
           "turnover_ratio": 3.3947885036468506,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4638,7 +5244,10 @@
           "turnover_ratio": 11.502386093139648,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4648,7 +5257,10 @@
           "turnover_ratio": 6.308629989624023,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4658,7 +5270,11 @@
           "turnover_ratio": 60.57170486450195,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光刻机（胶）",
+            "光伏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4668,7 +5284,10 @@
           "turnover_ratio": 10.022595405578613,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光伏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4678,7 +5297,10 @@
           "turnover_ratio": 26.789182662963867,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4688,7 +5310,10 @@
           "turnover_ratio": 4.0584282875061035,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4698,7 +5323,10 @@
           "turnover_ratio": 22.050872802734375,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4708,7 +5336,10 @@
           "turnover_ratio": 18.2099552154541,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4718,7 +5349,10 @@
           "turnover_ratio": 3.634063243865967,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学原料"
+          "industry": "化学原料",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4728,7 +5362,10 @@
           "turnover_ratio": 9.681329727172852,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4738,7 +5375,10 @@
           "turnover_ratio": 9.842315673828125,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4748,7 +5388,10 @@
           "turnover_ratio": 3.647642135620117,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "计算机设"
+          "industry": "计算机设",
+          "tdx_topics": [
+            "东数西算/算力"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4758,7 +5401,10 @@
           "turnover_ratio": 40.30903244018555,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "光通信"
+          ]
         }
       ]
     },
@@ -4774,7 +5420,10 @@
           "turnover_ratio": 3.260580062866211,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4784,7 +5433,10 @@
           "turnover_ratio": 6.333907604217529,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "半导体"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4794,7 +5446,10 @@
           "turnover_ratio": 12.665735244750977,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "云计算数据中心"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4804,7 +5459,10 @@
           "turnover_ratio": 9.409162521362305,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4814,7 +5472,10 @@
           "turnover_ratio": 24.49016761779785,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4824,7 +5485,10 @@
           "turnover_ratio": 10.233466148376465,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电力行业"
+          "industry": "电力行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4834,7 +5498,11 @@
           "turnover_ratio": 17.792407989501953,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "农牧饲渔"
+          "industry": "农牧饲渔",
+          "tdx_topics": [
+            "大农业",
+            "公告"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4844,7 +5512,10 @@
           "turnover_ratio": 14.804877281188965,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "中药"
+          "industry": "中药",
+          "tdx_topics": [
+            "工业大麻"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4854,7 +5525,10 @@
           "turnover_ratio": 20.665966033935547,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "光通信"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4864,7 +5538,10 @@
           "turnover_ratio": 1.1581839323043823,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4874,7 +5551,10 @@
           "turnover_ratio": 4.473546028137207,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "汽车零部件"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4884,7 +5564,10 @@
           "turnover_ratio": 8.349153518676758,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "造纸印刷"
+          "industry": "造纸印刷",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4894,7 +5577,10 @@
           "turnover_ratio": 10.802395820617676,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4904,7 +5590,11 @@
           "turnover_ratio": 2.4335873126983643,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药",
+            "工业大麻"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4914,7 +5604,10 @@
           "turnover_ratio": 3.7558209896087646,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4924,7 +5617,11 @@
           "turnover_ratio": 7.382331848144531,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药",
+            "工业大麻"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4934,7 +5631,10 @@
           "turnover_ratio": 7.383513927459717,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "光通信"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4944,7 +5644,11 @@
           "turnover_ratio": 4.90446138381958,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "华为产业链",
+            "光通信"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4954,7 +5658,10 @@
           "turnover_ratio": 8.991189002990723,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "云计算数据中心"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4964,7 +5671,10 @@
           "turnover_ratio": 4.145845890045166,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "汽车零部件"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4974,7 +5684,10 @@
           "turnover_ratio": 2.715789318084717,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电力行业"
+          "industry": "电力行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4984,7 +5697,10 @@
           "turnover_ratio": 21.50591278076172,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -4994,7 +5710,10 @@
           "turnover_ratio": 20.461759567260742,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5004,7 +5723,10 @@
           "turnover_ratio": 16.658079147338867,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制品"
+          "industry": "化学制品",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5014,7 +5736,10 @@
           "turnover_ratio": 8.947881698608398,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5024,7 +5749,10 @@
           "turnover_ratio": 17.907678604125977,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "橡胶制品"
+          "industry": "橡胶制品",
+          "tdx_topics": [
+            "云计算数据中心"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5034,7 +5762,10 @@
           "turnover_ratio": 56.013057708740234,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         }
       ]
     },
@@ -5050,7 +5781,10 @@
           "turnover_ratio": 3.525161027908325,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "农牧饲渔"
+          "industry": "农牧饲渔",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5060,7 +5794,10 @@
           "turnover_ratio": 2.2310850620269775,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5070,7 +5807,10 @@
           "turnover_ratio": 9.526840209960938,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "水泥建材"
+          "industry": "水泥建材",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5080,7 +5820,10 @@
           "turnover_ratio": 3.5054280757904053,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5090,7 +5833,10 @@
           "turnover_ratio": 13.72081184387207,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5100,7 +5846,10 @@
           "turnover_ratio": 0.7790372967720032,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程咨询"
+          "industry": "工程咨询",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5110,7 +5859,10 @@
           "turnover_ratio": 24.024555206298828,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "航运港口"
+          "industry": "航运港口",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5120,7 +5872,10 @@
           "turnover_ratio": 6.584930896759033,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "造纸印刷"
+          "industry": "造纸印刷",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5130,7 +5885,10 @@
           "turnover_ratio": 24.253355026245117,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电子化学"
+          "industry": "电子化学",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5140,7 +5898,10 @@
           "turnover_ratio": 13.620549201965332,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5150,7 +5911,10 @@
           "turnover_ratio": 10.625658988952637,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5160,7 +5924,10 @@
           "turnover_ratio": 5.448917865753174,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5170,7 +5937,10 @@
           "turnover_ratio": 8.422200202941895,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5180,7 +5950,10 @@
           "turnover_ratio": 12.234739303588867,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "综合行业"
+          "industry": "综合行业",
+          "tdx_topics": [
+            "福建自贸/海西概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5190,7 +5963,10 @@
           "turnover_ratio": 4.931463241577148,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "工程建设"
+          "industry": "工程建设",
+          "tdx_topics": [
+            "大基建"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5200,7 +5976,10 @@
           "turnover_ratio": 6.810240745544434,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "卫星互联网"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5210,7 +5989,10 @@
           "turnover_ratio": 52.75312805175781,
           "has_fail": false,
           "limit_times": 4,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5220,7 +6002,10 @@
           "turnover_ratio": 16.140789031982422,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程建设"
+          "industry": "工程建设",
+          "tdx_topics": [
+            "大基建"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5230,7 +6015,10 @@
           "turnover_ratio": 9.960309982299805,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "环保行业"
+          "industry": "环保行业",
+          "tdx_topics": [
+            "核污染防治"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5240,7 +6028,10 @@
           "turnover_ratio": 14.17791748046875,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "环保行业"
+          "industry": "环保行业",
+          "tdx_topics": [
+            "核污染防治"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5250,7 +6041,10 @@
           "turnover_ratio": 19.843326568603516,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5260,7 +6054,10 @@
           "turnover_ratio": 40.30421829223633,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         }
       ]
     },
@@ -5276,7 +6073,10 @@
           "turnover_ratio": 4.062190055847168,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5286,7 +6086,10 @@
           "turnover_ratio": 4.405507564544678,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5296,7 +6099,10 @@
           "turnover_ratio": 25.25516700744629,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5306,7 +6112,10 @@
           "turnover_ratio": 39.01191711425781,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5316,7 +6125,10 @@
           "turnover_ratio": 3.0475058555603027,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5326,7 +6138,10 @@
           "turnover_ratio": 15.681203842163086,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5336,7 +6151,10 @@
           "turnover_ratio": 6.873045444488525,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "中药"
+          "industry": "中药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5346,7 +6164,10 @@
           "turnover_ratio": 8.826147079467773,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "物流行业"
+          "industry": "物流行业",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5356,7 +6177,10 @@
           "turnover_ratio": 9.340173721313477,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5366,7 +6190,10 @@
           "turnover_ratio": 3.781956195831299,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车整车"
+          "industry": "汽车整车",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5376,7 +6203,10 @@
           "turnover_ratio": 23.458528518676758,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "航天航空"
+          "industry": "航天航空",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5386,7 +6216,10 @@
           "turnover_ratio": 64.54064178466797,
           "has_fail": true,
           "limit_times": 5,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5396,7 +6229,10 @@
           "turnover_ratio": 5.35059118270874,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5406,7 +6242,10 @@
           "turnover_ratio": 21.069490432739258,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5416,7 +6255,10 @@
           "turnover_ratio": 15.097474098205566,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5426,7 +6268,10 @@
           "turnover_ratio": 58.21495819091797,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5436,7 +6281,10 @@
           "turnover_ratio": 16.94000244140625,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "折叠屏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5446,7 +6294,10 @@
           "turnover_ratio": 7.839079856872559,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "有色金属"
+          "industry": "有色金属",
+          "tdx_topics": [
+            "黄金"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5456,7 +6307,10 @@
           "turnover_ratio": 25.890766143798828,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5466,7 +6320,10 @@
           "turnover_ratio": 9.119684219360352,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5476,7 +6333,10 @@
           "turnover_ratio": 8.502907752990723,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "煤炭"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5486,7 +6346,10 @@
           "turnover_ratio": 3.434168577194214,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "玻璃玻纤"
+          "industry": "玻璃玻纤",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5496,7 +6359,10 @@
           "turnover_ratio": 7.102829456329346,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "其他"
+          ]
         }
       ]
     },
@@ -5512,7 +6378,10 @@
           "turnover_ratio": 12.299654960632324,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5522,7 +6391,10 @@
           "turnover_ratio": 17.507795333862305,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5532,7 +6404,10 @@
           "turnover_ratio": 10.589897155761719,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "物流行业"
+          "industry": "物流行业",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5542,7 +6417,10 @@
           "turnover_ratio": 5.696903228759766,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "小金属"
+          "industry": "小金属",
+          "tdx_topics": [
+            "HEPS概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5552,7 +6430,10 @@
           "turnover_ratio": 7.546436309814453,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5562,7 +6443,10 @@
           "turnover_ratio": 38.06937789916992,
           "has_fail": true,
           "limit_times": 6,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5572,7 +6456,10 @@
           "turnover_ratio": 11.308318138122559,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5582,7 +6469,10 @@
           "turnover_ratio": 36.4879264831543,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5592,7 +6482,10 @@
           "turnover_ratio": 8.373619079589844,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5602,7 +6495,10 @@
           "turnover_ratio": 6.761837005615234,
           "has_fail": true,
           "limit_times": 5,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5612,7 +6508,10 @@
           "turnover_ratio": 11.067049980163574,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "造纸印刷"
+          "industry": "造纸印刷",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5622,7 +6521,10 @@
           "turnover_ratio": 11.490251541137695,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5632,7 +6534,10 @@
           "turnover_ratio": 12.257584571838379,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "生物制品"
+          "industry": "生物制品",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5642,7 +6547,10 @@
           "turnover_ratio": 8.45394515991211,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5652,7 +6560,10 @@
           "turnover_ratio": 4.06416130065918,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5662,7 +6573,10 @@
           "turnover_ratio": 6.774104118347168,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "中药"
+          "industry": "中药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5672,7 +6586,10 @@
           "turnover_ratio": 3.191903591156006,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5682,7 +6599,10 @@
           "turnover_ratio": 2.544590473175049,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5692,7 +6612,10 @@
           "turnover_ratio": 15.307462692260742,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5702,7 +6625,10 @@
           "turnover_ratio": 11.6116943359375,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5712,7 +6638,10 @@
           "turnover_ratio": 15.018352508544922,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "一体化压铸"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5722,7 +6651,10 @@
           "turnover_ratio": 11.699345588684082,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5732,7 +6664,10 @@
           "turnover_ratio": 6.588810920715332,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5742,7 +6677,10 @@
           "turnover_ratio": 4.6359171867370605,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制品"
+          "industry": "化学制品",
+          "tdx_topics": [
+            "HEPS概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5752,7 +6690,10 @@
           "turnover_ratio": 7.807995796203613,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电网设备"
+          "industry": "电网设备",
+          "tdx_topics": [
+            "HEPS概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5762,7 +6703,10 @@
           "turnover_ratio": 13.521419525146484,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "仪器仪表"
+          "industry": "仪器仪表",
+          "tdx_topics": [
+            "HEPS概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5772,7 +6716,10 @@
           "turnover_ratio": 28.990707397460938,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "工程建设"
+          "industry": "工程建设",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5782,7 +6729,10 @@
           "turnover_ratio": 15.295177459716797,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "一体化压铸"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5792,7 +6742,10 @@
           "turnover_ratio": 60.145225524902344,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5802,7 +6755,10 @@
           "turnover_ratio": 9.126962661743164,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5812,7 +6768,10 @@
           "turnover_ratio": 24.358009338378906,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "造纸印刷"
+          "industry": "造纸印刷",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5822,7 +6781,10 @@
           "turnover_ratio": 18.812044143676758,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "房地产开"
+          "industry": "房地产开",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         }
       ]
     },
@@ -5838,7 +6800,10 @@
           "turnover_ratio": 7.434539794921875,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "物流行业"
+          "industry": "物流行业",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5848,7 +6813,11 @@
           "turnover_ratio": 1.0072120428085327,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "非金属材"
+          "industry": "非金属材",
+          "tdx_topics": [
+            "智能制造",
+            "公告"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5858,7 +6827,10 @@
           "turnover_ratio": 8.032812118530273,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5868,7 +6840,10 @@
           "turnover_ratio": 1.0017032623291016,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5878,7 +6853,10 @@
           "turnover_ratio": 15.513029098510742,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "生物制品"
+          "industry": "生物制品",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5888,7 +6866,10 @@
           "turnover_ratio": 13.338804244995117,
           "has_fail": true,
           "limit_times": 3,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5898,7 +6879,10 @@
           "turnover_ratio": 24.451547622680664,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5908,7 +6892,11 @@
           "turnover_ratio": 4.06241512298584,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车整车"
+          "industry": "汽车整车",
+          "tdx_topics": [
+            "华为产业链",
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5918,7 +6906,10 @@
           "turnover_ratio": 9.636235237121582,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5928,7 +6919,10 @@
           "turnover_ratio": 4.577060699462891,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电机"
+          "industry": "电机",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5938,7 +6932,10 @@
           "turnover_ratio": 5.429025650024414,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "旅游酒店"
+          "industry": "旅游酒店",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5948,7 +6945,10 @@
           "turnover_ratio": 49.142913818359375,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "交运设备"
+          "industry": "交运设备",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5958,7 +6958,10 @@
           "turnover_ratio": 10.67080307006836,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5968,7 +6971,10 @@
           "turnover_ratio": 35.52351379394531,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5978,7 +6984,10 @@
           "turnover_ratio": 6.3379082679748535,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "小金属"
+          "industry": "小金属",
+          "tdx_topics": [
+            "有色金属"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5988,7 +6997,10 @@
           "turnover_ratio": 2.1902334690093994,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -5998,7 +7010,10 @@
           "turnover_ratio": 9.383106231689453,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6008,7 +7023,10 @@
           "turnover_ratio": 7.958194732666016,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "小金属"
+          "industry": "小金属",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6018,7 +7036,10 @@
           "turnover_ratio": 5.259982109069824,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6028,7 +7049,10 @@
           "turnover_ratio": 6.581109523773193,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6038,7 +7062,10 @@
           "turnover_ratio": 7.568681240081787,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6048,7 +7075,11 @@
           "turnover_ratio": 20.24701499938965,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链",
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6058,7 +7089,10 @@
           "turnover_ratio": 2.7967798709869385,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6068,7 +7102,10 @@
           "turnover_ratio": 32.46905517578125,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6078,7 +7115,10 @@
           "turnover_ratio": 4.786505222320557,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "房地产"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6088,7 +7128,10 @@
           "turnover_ratio": 7.853046417236328,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6098,7 +7141,10 @@
           "turnover_ratio": 2.4273765087127686,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6108,7 +7154,10 @@
           "turnover_ratio": 5.525252819061279,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6118,7 +7167,10 @@
           "turnover_ratio": 7.64180326461792,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "无人驾驶"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6128,7 +7180,10 @@
           "turnover_ratio": 7.555368423461914,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "装修装饰"
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "杭州亚运会"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6138,7 +7193,11 @@
           "turnover_ratio": 7.754643440246582,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "机器人",
+            "光伏"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6148,7 +7207,10 @@
           "turnover_ratio": 7.448987007141113,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "煤炭行业"
+          "industry": "煤炭行业",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6158,7 +7220,10 @@
           "turnover_ratio": 4.327525615692139,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6168,7 +7233,10 @@
           "turnover_ratio": 6.759987831115723,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6178,7 +7246,10 @@
           "turnover_ratio": 12.477774620056152,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电源设备"
+          "industry": "电源设备",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6188,7 +7259,10 @@
           "turnover_ratio": 16.741994857788086,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "国产芯片"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6198,7 +7272,10 @@
           "turnover_ratio": 5.368207931518555,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "美容护理"
+          "industry": "美容护理",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6208,7 +7285,10 @@
           "turnover_ratio": 11.090758323669434,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6218,7 +7298,10 @@
           "turnover_ratio": 8.495101928710938,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "商业百货"
+          "industry": "商业百货",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6228,7 +7311,10 @@
           "turnover_ratio": 4.068071365356445,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "3D打印"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6238,7 +7324,10 @@
           "turnover_ratio": 9.559273719787598,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "医疗器械"
+          "industry": "医疗器械",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6248,7 +7337,10 @@
           "turnover_ratio": 3.478562355041504,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "美容护理"
+          "industry": "美容护理",
+          "tdx_topics": [
+            "大消费"
+          ]
         }
       ]
     },
@@ -6264,7 +7356,10 @@
           "turnover_ratio": 4.775089740753174,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6274,7 +7369,11 @@
           "turnover_ratio": 6.621696472167969,
           "has_fail": true,
           "limit_times": 4,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "振兴东北",
+            "一带一路"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6284,7 +7383,10 @@
           "turnover_ratio": 0.7922506332397461,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "医疗器械"
+          "industry": "医疗器械",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6294,7 +7396,10 @@
           "turnover_ratio": 2.287017822265625,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学原料"
+          "industry": "化学原料",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6304,7 +7409,10 @@
           "turnover_ratio": 70.44701385498047,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6314,7 +7422,11 @@
           "turnover_ratio": 34.17729568481445,
           "has_fail": true,
           "limit_times": 2,
-          "industry": "电源设备"
+          "industry": "电源设备",
+          "tdx_topics": [
+            "振兴东北",
+            "一带一路"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6324,7 +7436,10 @@
           "turnover_ratio": 15.13687801361084,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "中药"
+          "industry": "中药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6334,7 +7449,10 @@
           "turnover_ratio": 16.434864044189453,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6344,7 +7462,10 @@
           "turnover_ratio": 6.347076416015625,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "工业母机"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6354,7 +7475,10 @@
           "turnover_ratio": 38.46944046020508,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "工业母机"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6364,7 +7488,11 @@
           "turnover_ratio": 6.140721797943115,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "铁路公路"
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "振兴东北",
+            "一带一路"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6374,7 +7502,11 @@
           "turnover_ratio": 15.002032279968262,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "电机"
+          "industry": "电机",
+          "tdx_topics": [
+            "机器人",
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6384,7 +7516,10 @@
           "turnover_ratio": 3.8444175720214844,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "专用设备"
+          "industry": "专用设备",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6394,7 +7529,10 @@
           "turnover_ratio": 20.37590789794922,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "星闪概念"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6404,7 +7542,10 @@
           "turnover_ratio": 20.948745727539062,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6414,7 +7555,10 @@
           "turnover_ratio": 9.646259307861328,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "医疗服务"
+          "industry": "医疗服务",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6424,7 +7568,10 @@
           "turnover_ratio": 2.6796624660491943,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "半导体"
+          "industry": "半导体",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6434,7 +7581,10 @@
           "turnover_ratio": 40.519622802734375,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "家电行业"
+          "industry": "家电行业",
+          "tdx_topics": [
+            "新能源汽车"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6444,7 +7594,10 @@
           "turnover_ratio": 2.1752736568450928,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         }
       ]
     },
@@ -6460,7 +7613,10 @@
           "turnover_ratio": 5.239689350128174,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "医疗服务"
+          "industry": "医疗服务",
+          "tdx_topics": [
+            "脑科学"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6470,7 +7626,10 @@
           "turnover_ratio": 12.531254768371582,
           "has_fail": false,
           "limit_times": 2,
-          "industry": "光学光电"
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6480,7 +7639,10 @@
           "turnover_ratio": 5.600543975830078,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "软件开发"
+          "industry": "软件开发",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6490,7 +7652,10 @@
           "turnover_ratio": 17.523714065551758,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通信设备"
+          "industry": "通信设备",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6500,7 +7665,10 @@
           "turnover_ratio": 9.51258659362793,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "东数西算/算力"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6510,7 +7678,10 @@
           "turnover_ratio": 25.21414566040039,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "汽车零部"
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "东数西算/算力"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6520,7 +7691,11 @@
           "turnover_ratio": 20.657787322998047,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药",
+            "公告"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6530,7 +7705,10 @@
           "turnover_ratio": 2.5215601921081543,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "食品饮料"
+          "industry": "食品饮料",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6540,7 +7718,11 @@
           "turnover_ratio": 24.077762603759766,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "互联网服"
+          "industry": "互联网服",
+          "tdx_topics": [
+            "华为产业链",
+            "东数西算/算力"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6550,7 +7732,10 @@
           "turnover_ratio": 8.458934783935547,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "化学制药"
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6560,7 +7745,11 @@
           "turnover_ratio": 18.304311752319336,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "文化传媒"
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "华为产业链",
+            "闪存"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6570,7 +7759,10 @@
           "turnover_ratio": 50.913299560546875,
           "has_fail": false,
           "limit_times": 3,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6580,7 +7772,10 @@
           "turnover_ratio": 8.316276550292969,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "装修建材"
+          "industry": "装修建材",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6590,7 +7785,10 @@
           "turnover_ratio": 7.675551414489746,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6600,7 +7798,10 @@
           "turnover_ratio": 12.964167594909668,
           "has_fail": false,
           "limit_times": 1,
-          "industry": "电网设备"
+          "industry": "电网设备",
+          "tdx_topics": [
+            "机器人"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6610,7 +7811,10 @@
           "turnover_ratio": 20.26162338256836,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "纺织服装"
+          "industry": "纺织服装",
+          "tdx_topics": [
+            "大消费"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6620,7 +7824,10 @@
           "turnover_ratio": 2.9908993244171143,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "通用设备"
+          "industry": "通用设备",
+          "tdx_topics": [
+            "其他"
+          ]
         },
         {
           "_tag": "LimitForStock",
@@ -6630,7 +7837,239 @@
           "turnover_ratio": 19.953540802001953,
           "has_fail": true,
           "limit_times": 1,
-          "industry": "消费电子"
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        }
+      ]
+    },
+    {
+      "_tag": "LimitForDay",
+      "date": "20230921",
+      "items": [
+        {
+          "_tag": "LimitForStock",
+          "code": "600355",
+          "name": "精伦电子",
+          "pct_chg": 10.077519416809082,
+          "turnover_ratio": 16.234821319580078,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "通信设备",
+          "tdx_topics": [
+            "智能制造",
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002333",
+          "name": "罗普斯金",
+          "pct_chg": 10.053619384765625,
+          "turnover_ratio": 21.88112449645996,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "装修建材",
+          "tdx_topics": [
+            "其他"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002691",
+          "name": "冀凯股份",
+          "pct_chg": 10.085470199584961,
+          "turnover_ratio": 7.256110668182373,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "专用设备",
+          "tdx_topics": [
+            "智能制造"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000766",
+          "name": "通化金马",
+          "pct_chg": 9.991673469543457,
+          "turnover_ratio": 11.524028778076172,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "其他"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600615",
+          "name": "丰华股份",
+          "pct_chg": 10,
+          "turnover_ratio": 9.131926536560059,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "小金属",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603042",
+          "name": "华脉科技",
+          "pct_chg": 10.026738166809082,
+          "turnover_ratio": 12.177153587341309,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "通信设备",
+          "tdx_topics": [
+            "5G"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "003015",
+          "name": "日久光电",
+          "pct_chg": 10.008339881896973,
+          "turnover_ratio": 45.53765106201172,
+          "has_fail": true,
+          "limit_times": 3,
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002796",
+          "name": "世嘉科技",
+          "pct_chg": 10.018726348876953,
+          "turnover_ratio": 5.198270320892334,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "专用设备",
+          "tdx_topics": [
+            "5G"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002369",
+          "name": "卓翼科技",
+          "pct_chg": 9.980039596557617,
+          "turnover_ratio": 4.479096412658691,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "智能制造",
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002642",
+          "name": "荣联科技",
+          "pct_chg": 10.011919021606445,
+          "turnover_ratio": 29.941455841064453,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "互联网服",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600751",
+          "name": "海航科技",
+          "pct_chg": 9.920635223388672,
+          "turnover_ratio": 3.9472994804382324,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "航运港口",
+          "tdx_topics": [
+            "航运"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "001282",
+          "name": "三联锻造",
+          "pct_chg": 10,
+          "turnover_ratio": 20.664518356323242,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002305",
+          "name": "南国置业",
+          "pct_chg": 9.865470886230469,
+          "turnover_ratio": 13.427923202514648,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "房地产开",
+          "tdx_topics": [
+            "其他"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002679",
+          "name": "福建金森",
+          "pct_chg": 9.977989196777344,
+          "turnover_ratio": 4.83521842956543,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "农牧饲渔",
+          "tdx_topics": [
+            "林业"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300735",
+          "name": "光弘科技",
+          "pct_chg": 19.966014862060547,
+          "turnover_ratio": 13.077045440673828,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002855",
+          "name": "捷荣技术",
+          "pct_chg": 10,
+          "turnover_ratio": 14.759929656982422,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ]
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000158",
+          "name": "常山北明",
+          "pct_chg": 9.986504554748535,
+          "turnover_ratio": 11.783099174499512,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "综合行业",
+          "tdx_topics": [
+            "华为产业链"
+          ]
         }
       ]
     }

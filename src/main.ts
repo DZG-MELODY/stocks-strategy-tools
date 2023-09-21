@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import('./modules/topic-trend/index.vue'),
     },
     {
+      name: 'head-trend',
+      path: '/head-trend',
+      component: () => import('./modules/head-trend/index.vue'),
+    },
+    {
       name: 'data-manage',
       path: '/data-manage',
       component: () => import('./modules/data-manage/index.vue')

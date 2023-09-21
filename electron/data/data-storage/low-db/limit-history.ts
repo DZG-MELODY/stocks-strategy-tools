@@ -58,10 +58,10 @@ export const updateTopicForLimitStocksByDay = async (date: string, items: Array<
   orgStocks.items.forEach(s => {
     const target = items.find(v => v.name === s.name);
     if (type === 'tdx') {
-      if (Array.isArray(s.tdx_topics)) s.tdx_topics = [];
+      if (!Array.isArray(s.tdx_topics)) s.tdx_topics = [];
       if (s.tdx_topics.length === 0) s.tdx_topics.push(...target.tdx_topics);
     } else {
-      if (Array.isArray(s.ths_topics)) s.ths_topics = [];
+      if (!Array.isArray(s.ths_topics)) s.ths_topics = [];
       if (s.ths_topics.length === 0) s.ths_topics.push(...target.ths_topics);
     }
   });

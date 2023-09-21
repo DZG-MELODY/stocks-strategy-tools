@@ -2,10 +2,10 @@
 import { BarY, barY, type PlotOptions } from '@observablehq/plot';
 import { onMounted, reactive, computed, watch } from 'vue';
 import BasePlot from '../../../components/charts/BasePlot.vue';
-import { TopicLimitStockItem } from 'electron/data';
+import { LimitForStock } from 'electron/data';
 
 const props = withDefaults(defineProps<{
-  stocks: Array<TopicLimitStockItem>,
+  stocks: Array<LimitForStock>,
 }>(),
   {
     stocks: () => ([])
@@ -21,11 +21,15 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // caption: 'data caption',
     margin: 60,
     x: {
-      paddingInner: 0.5
+      paddingInner: 0.5,
+      grid: true,
+      tickRotate: 45,
+      label: null
     },
     y: {
       grid: true,
       label: '连板数',
+      labelArrow: null,
       domain: [0, 15],
       interval: 1
     },
@@ -36,7 +40,7 @@ const plotOptions = reactive<{ options: PlotOptions }>({
   }
 });
 
-const genLineMarks = (data: Array<TopicLimitStockItem>): Array<BarY> => {
+const genLineMarks = (data: Array<LimitForStock>): Array<BarY> => {
   return [
     barY(data, { x: 'name', y: 'limit_times', fill: 'name', sort: { x: '-y' }, tip: 'x' }),
     // tip(data, pointerX({ x: 'date', y: 'limit_count' }))
@@ -55,7 +59,7 @@ watch(renderData, () => {
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col items-center justify-center overflow-scroll">
+  <div class="w-full h-full flex flex-col items-center justify-center overflow-scroll head-key-bar">
     <BasePlot :options="plotOptions.options" />
   </div>
 </template>
