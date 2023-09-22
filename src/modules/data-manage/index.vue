@@ -52,10 +52,10 @@ const onClickUpdateForTopic = async () => {
         <n-button size="small" @click="onClickUpdateForIndustry">拉取行业涨停数据</n-button>
       </n-space>
     </template>
-    <n-calendar
-v-model:value="selectTimeValue" :is-date-disabled="dateDisabledFn" class="h-full mx-3"
-      #="{ year, month, date }">
-      {{ year }}-{{ month }}-{{ date }}
-    </n-calendar>
+    <div class="h-full w-full p-3 overflow-auto">
+      <n-calendar v-model:value="selectTimeValue" :is-date-disabled="dateDisabledFn" #="{ year, month, date }">
+        {{ year }}-{{ month }}-{{ date }}
+      </n-calendar>
+    </div>
   </vertical-layout>
 </template>

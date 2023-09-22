@@ -57,7 +57,7 @@ const onClickFilterForToday = () => {
         <div class="w-full h-1/4 border-t-2 border-green-500 overflow-auto">
           <n-descriptions v-if="currentStock !== null" label-placement="top" title="详情" bordered :column="6">
             <n-descriptions-item label="换手">
-              {{ currentStock.turnover_ratio }}
+              {{ `${currentStock.turnover_ratio.toFixed(2)}%` }}
             </n-descriptions-item>
             <n-descriptions-item label="炸板">
               {{ currentStock.has_fail ? '是' : '否' }}
