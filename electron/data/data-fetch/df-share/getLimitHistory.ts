@@ -41,7 +41,9 @@ const covertStockItem = (item: StockItem): LimitForStock => ({
   turnover_ratio: item.hs,
   has_fail: item.zbc > 0,
   limit_times: item.lbc,
-  industry: item.hybk
+  industry: item.hybk,
+  tdx_topics: [],
+  ths_topics: []
 });
 
 export const fetchLimitHistoryForDay = async (day: string) => {

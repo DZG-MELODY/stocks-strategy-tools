@@ -50,8 +50,8 @@ const onClickToIndustryDetail = (industry: string) => {
       </n-space>
     </template>
     <topic-detail
-v-model:visible="detailOptions.visible" :industry-trend="trendData.trends"
-      :industry="detailOptions.topic" :start="detailOptions.start" :end="detailOptions.end">
+v-model:visible="detailOptions.visible" :topic-trend="trendData.trends"
+      :topic="detailOptions.topic" :start="detailOptions.start" :end="detailOptions.end">
     </topic-detail>
     <div class="w-full h-full p-3 flex flex-row overflow-hidden">
       <div class="flex-1 h-full">

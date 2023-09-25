@@ -19,6 +19,11 @@ defineOptions({ name: 'HomePage' });
         <span class="font-bold">龙头趋势</span>
       </div>
     </RouterLink>
+    <RouterLink :to="{ name: 'stock-analyze' }">
+      <div class="bg-red-700 w-full h-full flex justify-center items-center cursor-pointer">
+        <span class="font-bold">个股分析</span>
+      </div>
+    </RouterLink>
     <RouterLink :to="{ name: 'data-manage' }">
       <div class="bg-green-500 w-full h-full flex justify-center items-center cursor-pointer">
         <span class="font-bold">数据管理</span>

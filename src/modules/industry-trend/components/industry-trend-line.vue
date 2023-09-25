@@ -28,6 +28,7 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // title: 'data title',
     // subtitle: 'data sub title',
     // caption: 'data caption',
+    width: 1024,
     margin: 60,
     x: {
       grid: true,

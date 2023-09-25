@@ -4,8 +4,10 @@ import VerticalLayout from '../../components/layout/VerticalLayout.vue';
 import HeadKeyBar from './components/head-key-bar.vue';
 import { convertToDay } from '../../utils/time';
 import { LimitForStock } from 'electron/data';
+import { useRouter } from 'vue-router';
 
 defineOptions({ name: 'TopicTrend' });
+const router = useRouter();
 const selectTime = ref<number>(Date.now());
 const selectDay = computed(() => convertToDay(selectTime.value));
 const headData = reactive<{ selectStock: string, trends: Array<LimitForStock>, limitData: Array<LimitForStock> }>({
@@ -33,6 +35,9 @@ const onClickFilterForToday = () => {
   headData.trends = headData.limitData.filter(v => v.limit_times >= limitTimesFilterCount.value);
 };
 
+const onClickStockAnalyze = () => {
+  router.push({ name: 'stock-analyze', query: { code: currentStock.value?.code, name: currentStock.value?.name } });
+};
 
 </script>
 
@@ -67,6 +72,9 @@ const onClickFilterForToday = () => {
             </n-descriptions-item>
             <n-descriptions-item label="题材">
               <n-tag v-for="topic in currentStock.tdx_topics" :key="topic" type="info">{{ topic }}</n-tag>
+            </n-descriptions-item>
+            <n-descriptions-item label="操作">
+              <n-button size="small" type="primary" @click="onClickStockAnalyze">分析</n-button>
             </n-descriptions-item>
           </n-descriptions>
         </div>

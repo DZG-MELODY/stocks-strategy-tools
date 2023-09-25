@@ -20,8 +20,10 @@ import {
   type LimitForDay,
   type IndustryLimitStocks
 } from './data-storage/low-db';
+import { StockOfDaily, fetchStockDailyData } from './data-fetch/tu-share';
 
 export type * from './data-storage/low-db';
+export type * from './data-fetch/tu-share';
 
 
 type DataResult<T extends { _tag: string }, E = string> = [true, T] | [false, E]
@@ -119,6 +121,14 @@ export async function updateTopicForDay(query: { day: string }): Promise<DataRes
 }
 
 
+// 获取指定股票的日线图
+export async function getDailyDataForStock(query: { code: string, start: string, end: string }): Promise<DataResult<StockOfDaily>> {
+  const { code, start, end } = query;
+  const dailyData = await fetchStockDailyData(code, start, end);
+  if (dailyData instanceof Error) return [false, dailyData.message];
+  return wrapResult<StockOfDaily>({ success: true, result: dailyData });
+}
+
 const DataFetchMaps = {
   getLimitHistory,
   updateLimitForDay,
@@ -126,7 +136,8 @@ const DataFetchMaps = {
   getIndustryLimitStocks,
   updateTopicForDay,
   getTopicTrend,
-  getTopicLimitStocks
+  getTopicLimitStocks,
+  getDailyDataForStock
 };
 
 export type DataFetchMaps = typeof DataFetchMaps

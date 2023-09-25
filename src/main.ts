@@ -29,6 +29,11 @@ const router = createRouter({
       component: () => import('./modules/head-trend/index.vue'),
     },
     {
+      name: 'stock-analyze',
+      path: '/stock-analyze',
+      component: () => import('./modules/stock-analyze/index.vue'),
+    },
+    {
       name: 'data-manage',
       path: '/data-manage',
       component: () => import('./modules/data-manage/index.vue')
