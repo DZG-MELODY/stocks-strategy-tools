@@ -87,13 +87,13 @@ watch(() => props.visible, (v) => {
       <div class="w-full h-full p-3 flex flex-row justify-between overflow-hidden">
         <div class="h-full flex-1 flex flex-col justify-between gap-3">
           <div class="h-3/4 w-full flex flex-row justify-between">
-            <div class="h-full w-1/2">
+            <div class="h-full flex-1">
               <topic-trend-line
 v-if="topicTrend.length > 0" :trends="topicTrend"
-                :topics="[topic]"></topic-trend-line>
+                :topics="[topic]" :show-legend="false"></topic-trend-line>
               <n-empty v-else description="暂无数据" class="w-full h-full justify-center"></n-empty>
             </div>
-            <div class="h-full w-1/2">
+            <div class="h-full flex-1">
               <topic-key-bar v-if="stocksForDay.length > 0" :stocks="stocksForDay"></topic-key-bar>
               <n-empty v-else description="暂无数据" class="w-full h-full justify-center"></n-empty>
             </div>

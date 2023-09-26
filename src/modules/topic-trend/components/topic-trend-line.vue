@@ -6,9 +6,10 @@ import { TopicTrendItem } from 'electron/data';
 
 const props = withDefaults(defineProps<{
   trends: Array<TopicTrendItem>,
-  topics: Array<string>
+  topics: Array<string>,
+  showLegend?: boolean
 }>(),
-  {});
+  { showLegend: true });
 
 
 const renderData = computed<Array<{ date: string, topic: string, limit_count: number }>>(() => {
@@ -28,7 +29,6 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // title: 'data title',
     // subtitle: 'data sub title',
     // caption: 'data caption',
-    width: 1024,
     margin: 60,
     x: {
       grid: true,
@@ -36,12 +36,12 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     },
     y: {
       grid: true,
-      label: 'count',
+      label: '涨停家数',
       interval: 1,
       domain: [0, 20]
     },
     color: {
-      legend: true
+      legend: props.showLegend
     },
     marks: []
   }

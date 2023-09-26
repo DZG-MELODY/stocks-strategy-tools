@@ -6,9 +6,10 @@ import { IndustryTrendItem } from 'electron/data';
 
 const props = withDefaults(defineProps<{
   trends: Array<IndustryTrendItem>,
-  industries: Array<string>
+  industries: Array<string>,
+  showLegend?: boolean
 }>(),
-  {});
+  { showLegend: true });
 
 
 const renderData = computed<Array<{ date: string, industry: string, limit_count: number }>>(() => {
@@ -41,7 +42,7 @@ const plotOptions = reactive<{ options: PlotOptions }>({
       domain: [0, 20]
     },
     color: {
-      legend: true
+      legend: props.showLegend
     },
     marks: []
   }

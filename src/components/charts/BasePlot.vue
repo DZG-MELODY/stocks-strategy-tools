@@ -8,7 +8,9 @@ const plotElement = ref<null | ReturnType<typeof plot>>(null);
 
 onMounted(() => {
   if (plotRoot.value === null) return;
-  plotElement.value = plot(props.options);
+  const renderWidth = plotRoot.value.getBoundingClientRect().width;
+  const renderOptions = { ...props.options, width: renderWidth };
+  plotElement.value = plot(renderOptions);
   plotRoot.value?.append(plotElement.value);
 });
 
@@ -19,13 +21,16 @@ onBeforeUnmount(() => {
 
 watch(props.options, () => {
   if (plotElement.value) plotElement.value.remove();
-  plotElement.value = plot(props.options);
+  if (plotRoot.value === null) return;
+  const renderWidth = plotRoot.value.getBoundingClientRect().width;
+  const renderOptions = { ...props.options, width: renderWidth };
+  plotElement.value = plot(renderOptions);
   plotRoot.value?.append(plotElement.value);
 });
 
 </script>
 <template>
-  <div ref="plotRoot" class="plot-root w-full h-full py-[15px]"></div>
+  <div ref="plotRoot" class="plot-root w-full h-full flex items-center justify-center"></div>
 </template>
 <style scoped>
 /* .plot-root :deep(figure) {

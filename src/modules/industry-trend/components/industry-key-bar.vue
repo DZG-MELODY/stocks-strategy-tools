@@ -21,7 +21,8 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     // caption: 'data caption',
     margin: 60,
     x: {
-      paddingInner: 0.5
+      paddingInner: 0.5,
+      tickRotate: 45
     },
     y: {
       grid: true,

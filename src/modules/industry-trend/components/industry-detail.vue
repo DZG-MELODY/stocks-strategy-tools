@@ -90,7 +90,7 @@ watch(() => props.visible, (v) => {
             <div class="h-full w-1/2">
               <industry-trend-line
 v-if="industryTrend.length > 0" :trends="industryTrend"
-                :industries="[industry]"></industry-trend-line>
+                :industries="[industry]" :show-legend="false"></industry-trend-line>
               <n-empty v-else description="暂无数据" class="w-full h-full justify-center"></n-empty>
             </div>
             <div class="h-full w-1/2">
