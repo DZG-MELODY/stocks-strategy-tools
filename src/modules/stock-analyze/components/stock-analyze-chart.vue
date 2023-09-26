@@ -20,8 +20,8 @@ const plotOptions = reactive<{ options: PlotOptions }>({
     grid: true,
     x: {
       type: 'point',
-      tickRotate:90,
-      label:null
+      tickRotate: 90,
+      label: null
     },
     y: {},
     color: {
@@ -34,11 +34,12 @@ const plotOptions = reactive<{ options: PlotOptions }>({
 
 const genLineMarks = (data: Array<StockOfDailyItem>): Array<RuleX> => {
   return [
-    ruleX(data, { x: 'trade_date', y1: 'low', y2: 'high', stroke: (d: StockOfDailyItem) => Math.sign(d.close - d.open), }),
+    ruleX(data, { x: 'trade_date', y1: 'low', y2: 'high', stroke: (d: StockOfDailyItem) => d.close !== d.open ? Math.sign(d.close - d.open) : Math.sign(d.high - d.low), }),
     ruleX(data, {
-      x: 'trade_date', y1: 'open', y2: 'close',
-      stroke: (d: StockOfDailyItem) => Math.sign(d.close - d.open),
+      x: 'trade_date', y1: 'open', y2: 'close',//(d: StockOfDailyItem) => d.close === d.open ? (d.high >= d.low ? d.close + 0.001 : d.close - 0.001) : d.close,
+      stroke: (d: StockOfDailyItem) => d.close !== d.open ? Math.sign(d.close - d.open) : Math.sign(d.high - d.low),
       strokeWidth: 6,
+      tip: 'x'
     })
   ];
 };
