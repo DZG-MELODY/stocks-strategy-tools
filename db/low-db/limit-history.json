@@ -11834,6 +11834,531 @@
           "ths_topics": []
         }
       ]
+    },
+    {
+      "_tag": "LimitForDay",
+      "date": "20231011",
+      "items": [
+        {
+          "_tag": "LimitForStock",
+          "code": "000541",
+          "name": "佛山照明",
+          "pct_chg": 9.965636253356934,
+          "turnover_ratio": 2.5611579418182373,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "家电行业",
+          "tdx_topics": [
+            "新能源汽车"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002456",
+          "name": "欧菲光",
+          "pct_chg": 9.948320388793945,
+          "turnover_ratio": 1.2705886363983154,
+          "has_fail": false,
+          "limit_times": 4,
+          "industry": "光学光电",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002514",
+          "name": "宝馨科技",
+          "pct_chg": 9.960159301757812,
+          "turnover_ratio": 5.775818347930908,
+          "has_fail": false,
+          "limit_times": 3,
+          "industry": "通用设备",
+          "tdx_topics": [
+            "充电桩"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603178",
+          "name": "圣龙股份",
+          "pct_chg": 10,
+          "turnover_ratio": 13.255467414855957,
+          "has_fail": true,
+          "limit_times": 4,
+          "industry": "汽车零部",
+          "tdx_topics": [
+            "新能源汽车"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603108",
+          "name": "润达医疗",
+          "pct_chg": 9.993674278259277,
+          "turnover_ratio": 5.97846794128418,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "医疗服务",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603229",
+          "name": "奥翔药业",
+          "pct_chg": 10.035842895507812,
+          "turnover_ratio": 2.0989418029785156,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000158",
+          "name": "常山北明",
+          "pct_chg": 10.041407585144043,
+          "turnover_ratio": 13.443544387817383,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "综合行业",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600721",
+          "name": "百花医药",
+          "pct_chg": 10.065360069274902,
+          "turnover_ratio": 6.2776689529418945,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "医疗服务",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "601900",
+          "name": "南方传媒",
+          "pct_chg": 9.980682373046875,
+          "turnover_ratio": 3.1451358795166016,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "传媒"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002907",
+          "name": "华森制药",
+          "pct_chg": 10.012063026428223,
+          "turnover_ratio": 2.882199764251709,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "中药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300341",
+          "name": "麦克奥迪",
+          "pct_chg": 19.963031768798828,
+          "turnover_ratio": 8.545113563537598,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "电网设备",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600895",
+          "name": "张江高科",
+          "pct_chg": 10.012567520141602,
+          "turnover_ratio": 4.700812816619873,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "房地产开",
+          "tdx_topics": [
+            "光刻机（胶）"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "605177",
+          "name": "东亚药业",
+          "pct_chg": 9.986129760742188,
+          "turnover_ratio": 8.443750381469727,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603160",
+          "name": "汇顶科技",
+          "pct_chg": 10.003049850463867,
+          "turnover_ratio": 3.6782758235931396,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "半导体",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "301281",
+          "name": "科源制药",
+          "pct_chg": 20,
+          "turnover_ratio": 37.127098083496094,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002947",
+          "name": "恒铭达",
+          "pct_chg": 9.990663528442383,
+          "turnover_ratio": 14.342260360717773,
+          "has_fail": true,
+          "limit_times": 2,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603127",
+          "name": "昭衍新药",
+          "pct_chg": 10.013233184814453,
+          "turnover_ratio": 2.6417953968048096,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "医疗服务",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603595",
+          "name": "东尼电子",
+          "pct_chg": 9.990692138671875,
+          "turnover_ratio": 1.096158742904663,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "其他"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000526",
+          "name": "学大教育",
+          "pct_chg": 10.009532928466797,
+          "turnover_ratio": 4.974860191345215,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "教育",
+          "tdx_topics": [
+            "教育"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002599",
+          "name": "盛通股份",
+          "pct_chg": 10.071942329406738,
+          "turnover_ratio": 19.797977447509766,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "包装材料",
+          "tdx_topics": [
+            "华为产业链",
+            "教育"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "601801",
+          "name": "皖新传媒",
+          "pct_chg": 10.04243278503418,
+          "turnover_ratio": 2.314472198486328,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "传媒"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "605577",
+          "name": "龙版传媒",
+          "pct_chg": 10,
+          "turnover_ratio": 10.48446273803711,
+          "has_fail": false,
+          "limit_times": 2,
+          "industry": "文化传媒",
+          "tdx_topics": [
+            "传媒"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002652",
+          "name": "扬子新材",
+          "pct_chg": 10.13513469696045,
+          "turnover_ratio": 5.8394317626953125,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "装修建材",
+          "tdx_topics": [
+            "其他"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600613",
+          "name": "神奇制药",
+          "pct_chg": 10.05434799194336,
+          "turnover_ratio": 7.85447359085083,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000509",
+          "name": "华塑控股",
+          "pct_chg": 10.14084529876709,
+          "turnover_ratio": 3.9402360916137695,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "光学光电",
+          "tdx_topics": [
+            "其他"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603131",
+          "name": "上海沪工",
+          "pct_chg": 10.028050422668457,
+          "turnover_ratio": 6.796417713165283,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "通用设备",
+          "tdx_topics": [
+            "6G"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603168",
+          "name": "莎普爱思",
+          "pct_chg": 9.9580717086792,
+          "turnover_ratio": 5.2638702392578125,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "化学制药",
+          "tdx_topics": [
+            "医药"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "600877",
+          "name": "电科芯片",
+          "pct_chg": 10.014619827270508,
+          "turnover_ratio": 6.841216564178467,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "半导体",
+          "tdx_topics": [
+            "6G"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002308",
+          "name": "威创股份",
+          "pct_chg": 10.0204496383667,
+          "turnover_ratio": 7.740388870239258,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "计算机设",
+          "tdx_topics": [
+            "教育"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603069",
+          "name": "海汽集团",
+          "pct_chg": 9.98774528503418,
+          "turnover_ratio": 4.191797256469727,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "铁路公路",
+          "tdx_topics": [
+            "其他"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002792",
+          "name": "通宇通讯",
+          "pct_chg": 9.982587814331055,
+          "turnover_ratio": 19.693092346191406,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "通信设备",
+          "tdx_topics": [
+            "6G"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002782",
+          "name": "可立克",
+          "pct_chg": 10.015527725219727,
+          "turnover_ratio": 9.79448127746582,
+          "has_fail": false,
+          "limit_times": 1,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "充电桩"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "002369",
+          "name": "卓翼科技",
+          "pct_chg": 9.984399795532227,
+          "turnover_ratio": 33.967159271240234,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "消费电子",
+          "tdx_topics": [
+            "华为产业链"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "000066",
+          "name": "中国长城",
+          "pct_chg": 10.04651165008545,
+          "turnover_ratio": 4.565587520599365,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "计算机设",
+          "tdx_topics": [
+            "国产芯片"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "603929",
+          "name": "亚翔集成",
+          "pct_chg": 10,
+          "turnover_ratio": 7.3931660652160645,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "装修装饰",
+          "tdx_topics": [
+            "国产芯片"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "001226",
+          "name": "拓山重工",
+          "pct_chg": 9.993906021118164,
+          "turnover_ratio": 44.070457458496094,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "通用设备",
+          "tdx_topics": [
+            "其他"
+          ],
+          "ths_topics": []
+        },
+        {
+          "_tag": "LimitForStock",
+          "code": "300045",
+          "name": "华力创通",
+          "pct_chg": 20,
+          "turnover_ratio": 47.09900665283203,
+          "has_fail": true,
+          "limit_times": 1,
+          "industry": "计算机设",
+          "tdx_topics": [
+            "6G"
+          ],
+          "ths_topics": []
+        }
+      ]
     }
   ]
 }
