@@ -29,8 +29,19 @@ const onClickUpdateForIndustry = async () => {
   }
 };
 
-const onClickUpdateForTopic = async () => {
+const onClickUpdateForTopicByLocal = async () => {
   const [success, result] = await window.dataFetcher.fetch('updateTopicForDay', { day: selectDayTime.value });
+  if (success === true && result._tag === "LimitForDay") {
+    message.success(`${result.date} 更新完毕`);
+    console.log(result.date, result.items);
+  } else {
+    message.error('数据更新失败');
+    console.log(result);
+  }
+};
+
+const onClickUpdateForTopic = async () => {
+  const [success, result] = await window.dataFetcher.fetch('updatePlateForDay', { day: selectDayTime.value });
   if (success === true && result._tag === "LimitForDay") {
     message.success(`${result.date} 更新完毕`);
     console.log(result.date, result.items);
@@ -48,8 +59,9 @@ const onClickUpdateForTopic = async () => {
     <template #header>
       <n-space class="h-full w-full mx-3" justify="end" align="center">
         <span>选择时间：{{ selectDayTime }}</span>
-        <n-button size="small" @click="onClickUpdateForTopic">更新题材涨停数据</n-button>
+        <n-button size="small" @click="onClickUpdateForTopicByLocal">更新题材涨停数据(本地)</n-button>
         <n-button size="small" @click="onClickUpdateForIndustry">拉取行业涨停数据</n-button>
+        <n-button size="small" @click="onClickUpdateForTopic">更新题材涨停数据</n-button>
       </n-space>
     </template>
     <div class="h-full w-full p-3 overflow-auto">

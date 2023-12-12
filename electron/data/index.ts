@@ -1,6 +1,6 @@
 import { IpcMainInvokeEvent, ipcMain } from 'electron';
 import { fetchLimitHistoryForDay } from './data-fetch/df-share';
-import { fetchLimitHistoryForTopic } from './data-fetch/local-share/getLimitForTopic';
+import { fetchLimitHistoryForTopicByLocal } from './data-fetch/local-share/getLimitForTopic';
 import {
   calcIndustryTrendForTimeline,
   getIndustryTrendForDay,
@@ -21,6 +21,7 @@ import {
   type IndustryLimitStocks
 } from './data-storage/low-db';
 import { StockOfDaily, fetchStockDailyData } from './data-fetch/tu-share';
+import { fetchLimitHistoryForTopicByXGB } from './data-fetch/xgb-share';
 
 export type * from './data-storage/low-db';
 export type * from './data-fetch/tu-share';
@@ -107,9 +108,25 @@ export async function getTopicLimitStocks(query: { industry: string, start: stri
 // 更新指定日期的题材数据
 export async function updateTopicForDay(query: { day: string }): Promise<DataResult<LimitForDay>> {
   // 获取数据
-  const limitRows = await fetchLimitHistoryForTopic();
+  const limitRows = await fetchLimitHistoryForTopicByLocal();
   if (limitRows instanceof Error) return [false, limitRows.message];
   const { day } = query;
+  // 更新涨停数据表
+  let ret = await updateTopicForLimitStocksByDay(day, limitRows);
+  if (ret instanceof Error) return [false, ret.message];
+  // 更新题材趋势表
+  ret = await updateTopicTrendForDay(day, limitRows);
+  if (ret instanceof Error) return [false, ret.message];
+  // 返回结果
+  return wrapResult<LimitForDay>({ success: true, result: { _tag: 'LimitForDay', date: day, items: limitRows } });
+}
+
+// 更新指定日期的题材数据
+export async function updatePlateForDay(query: { day: string }): Promise<DataResult<LimitForDay>> {
+  // 获取数据
+  const { day } = query;
+  const limitRows = await fetchLimitHistoryForTopicByXGB(day);
+  if (limitRows instanceof Error) return [false, limitRows.message];
   // 更新涨停数据表
   let ret = await updateTopicForLimitStocksByDay(day, limitRows);
   if (ret instanceof Error) return [false, ret.message];
@@ -135,6 +152,7 @@ const DataFetchMaps = {
   getIndustryTrend,
   getIndustryLimitStocks,
   updateTopicForDay,
+  updatePlateForDay,
   getTopicTrend,
   getTopicLimitStocks,
   getDailyDataForStock

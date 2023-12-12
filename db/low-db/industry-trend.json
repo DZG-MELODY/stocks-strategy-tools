@@ -40888,7 +40888,9 @@
               "has_fail": false,
               "limit_times": 2,
               "industry": "文化传媒",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "传媒"
+              ],
               "ths_topics": []
             },
             {
@@ -40900,7 +40902,9 @@
               "has_fail": true,
               "limit_times": 2,
               "industry": "文化传媒",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "传媒"
+              ],
               "ths_topics": []
             },
             {
@@ -40912,7 +40916,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "文化传媒",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "传媒"
+              ],
               "ths_topics": []
             }
           ]
@@ -40931,7 +40937,9 @@
               "has_fail": false,
               "limit_times": 2,
               "industry": "通信设备",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             },
             {
@@ -40943,7 +40951,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "通信设备",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]
@@ -40962,7 +40972,9 @@
               "has_fail": false,
               "limit_times": 5,
               "industry": "游戏",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "传媒"
+              ],
               "ths_topics": []
             }
           ]
@@ -40981,7 +40993,9 @@
               "has_fail": false,
               "limit_times": 4,
               "industry": "计算机设",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "多模态"
+              ],
               "ths_topics": []
             },
             {
@@ -40993,7 +41007,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "计算机设",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "其他"
+              ],
               "ths_topics": []
             },
             {
@@ -41005,7 +41021,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "计算机设",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "其他"
+              ],
               "ths_topics": []
             }
           ]
@@ -41024,7 +41042,10 @@
               "has_fail": false,
               "limit_times": 2,
               "industry": "商业百货",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革",
+                "大消费"
+              ],
               "ths_topics": []
             }
           ]
@@ -41043,7 +41064,10 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "生物制品",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "医药",
+                "公告"
+              ],
               "ths_topics": []
             }
           ]
@@ -41062,7 +41086,9 @@
               "has_fail": true,
               "limit_times": 3,
               "industry": "燃气",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]
@@ -41081,7 +41107,9 @@
               "has_fail": false,
               "limit_times": 2,
               "industry": "互联网服",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "多模态"
+              ],
               "ths_topics": []
             },
             {
@@ -41093,7 +41121,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "互联网服",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "数据要素"
+              ],
               "ths_topics": []
             }
           ]
@@ -41112,7 +41142,9 @@
               "has_fail": true,
               "limit_times": 5,
               "industry": "水泥建材",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             },
             {
@@ -41124,7 +41156,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "水泥建材",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             }
           ]
@@ -41143,7 +41177,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "食品饮料",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "大消费"
+              ],
               "ths_topics": []
             },
             {
@@ -41155,7 +41191,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "食品饮料",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "大消费"
+              ],
               "ths_topics": []
             },
             {
@@ -41167,7 +41205,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "食品饮料",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "大消费"
+              ],
               "ths_topics": []
             }
           ]
@@ -41186,7 +41226,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "贸易行业",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "优化生育（三孩）"
+              ],
               "ths_topics": []
             },
             {
@@ -41198,7 +41240,10 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "贸易行业",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "大消费",
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]
@@ -41217,7 +41262,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "软件开发",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "教育"
+              ],
               "ths_topics": []
             },
             {
@@ -41229,7 +41276,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "软件开发",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "教育"
+              ],
               "ths_topics": []
             }
           ]
@@ -41248,7 +41297,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "船舶制造",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "中字头"
+              ],
               "ths_topics": []
             }
           ]
@@ -41267,7 +41318,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "专用设备",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "其他"
+              ],
               "ths_topics": []
             },
             {
@@ -41279,7 +41332,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "专用设备",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "新能源汽车"
+              ],
               "ths_topics": []
             }
           ]
@@ -41298,7 +41353,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "汽车整车",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "新能源汽车"
+              ],
               "ths_topics": []
             }
           ]
@@ -41317,7 +41374,10 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产",
+                "中字头"
+              ],
               "ths_topics": []
             },
             {
@@ -41329,7 +41389,9 @@
               "has_fail": true,
               "limit_times": 2,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             },
             {
@@ -41341,7 +41403,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             },
             {
@@ -41353,7 +41417,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             },
             {
@@ -41365,7 +41431,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             },
             {
@@ -41377,7 +41445,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "房地产开",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             }
           ]
@@ -41396,7 +41466,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "光学光电",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "VR&AR"
+              ],
               "ths_topics": []
             },
             {
@@ -41408,7 +41480,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "光学光电",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "VR&AR"
+              ],
               "ths_topics": []
             }
           ]
@@ -41427,7 +41501,10 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "教育",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "教育",
+                "中字头"
+              ],
               "ths_topics": []
             },
             {
@@ -41439,7 +41516,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "教育",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "教育"
+              ],
               "ths_topics": []
             }
           ]
@@ -41458,7 +41537,10 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "家用轻工",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "教育",
+                "优化生育（三孩）"
+              ],
               "ths_topics": []
             }
           ]
@@ -41477,7 +41559,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "装修装饰",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "房地产"
+              ],
               "ths_topics": []
             }
           ]
@@ -41496,7 +41580,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "工程咨询",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "数据要素"
+              ],
               "ths_topics": []
             }
           ]
@@ -41515,7 +41601,9 @@
               "has_fail": false,
               "limit_times": 1,
               "industry": "物流行业",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]
@@ -41534,7 +41622,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "造纸印刷",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]
@@ -41553,7 +41643,9 @@
               "has_fail": true,
               "limit_times": 1,
               "industry": "航运港口",
-              "tdx_topics": [],
+              "tdx_topics": [
+                "国企改革"
+              ],
               "ths_topics": []
             }
           ]

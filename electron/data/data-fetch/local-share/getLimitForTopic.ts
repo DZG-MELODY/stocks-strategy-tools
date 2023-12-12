@@ -26,7 +26,7 @@ const covertStockItem = (item: StockItem): LimitForStock => ({
   ths_topics: []
 });
 
-export const fetchLimitHistoryForTopic = async () => {
+export const fetchLimitHistoryForTopicByLocal = async () => {
   const selectFile = await selectFileByDialog();
   if (selectFile === false) return new Error('未选择文件');
   const ret = await fetchFromCSV<Array<StockItem>>(selectFile[0]);
